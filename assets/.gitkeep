@@ -1,0 +1,8 @@
+# Assets Directory
+# Place your images here:
+# - person-holding-book.png (Hero section image)
+# - person.png (Author section image)  
+# - mockup.png (Book mockup image)
+# - og-image.jpg (Social media preview image)
+
+# You can copy the images from your React project's src/assets/ folder to this directory.
