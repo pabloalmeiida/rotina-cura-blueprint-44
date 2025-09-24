@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/person-holding-book.png";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen font-lato overflow-hidden">
+  return <section className="relative min-h-screen font-lato overflow-hidden">
       {/* Pre-launch banner */}
       <div className="relative z-20 bg-gradient-banner text-white py-4">
         <div className="container mx-auto px-4 text-center">
@@ -62,13 +60,7 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                <Button 
-                  variant="hero" 
-                  size="xl" 
-                  className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl"
-                >
-                  ✅ QUERO MEU LIVRO COM 85% OFF
-                </Button>
+                <Button variant="hero" size="xl" className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl">QUERO MEU LIVRO COM 85% OFF</Button>
               </div>
             </div>
 
@@ -76,11 +68,7 @@ const HeroSection = () => {
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative max-w-xs sm:max-w-md lg:max-w-lg mx-auto">
                 <div className="absolute -inset-2 sm:-inset-4 bg-gradient-cta opacity-20 rounded-3xl blur-2xl"></div>
-                <img 
-                  src={heroImage} 
-                  alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura"
-                  className="relative w-full h-auto rounded-3xl shadow-strong border-4 border-white/50"
-                />
+                <img src={heroImage} alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura" className="relative w-full h-auto rounded-3xl shadow-strong border-4 border-white/50" />
                 <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 bg-primary-cyan text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-custom">
                   ✨ Exclusivo
                 </div>
@@ -89,8 +77,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
