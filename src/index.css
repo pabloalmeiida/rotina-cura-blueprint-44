@@ -54,7 +54,7 @@ All colors MUST be HSL.
     /* Gradientes com as cores especificadas */
     --gradient-hero: linear-gradient(135deg, hsl(194 100% 20%) 0%, hsl(188 99% 39%) 50%, hsl(194 100% 20%) 100%);
     --gradient-section: linear-gradient(180deg, hsl(45 15% 96%), hsl(45 25% 95%));
-    --gradient-cta: linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(40, 191, 33, 1) 100%);
+    --gradient-cta: linear-gradient(90deg, rgba(0, 92, 100, 1) 0%, rgba(1, 181, 200, 1) 70%);
     --gradient-banner: linear-gradient(90deg, hsl(0 89% 38%), hsl(0 81% 46%));
     --gradient-elegant: linear-gradient(135deg, hsl(45 25% 95%) 0%, hsl(210 10% 92%) 100%);
     
