@@ -8,7 +8,7 @@ const OfferSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 lg:mb-16">
-            <div className="inline-flex items-center gap-2 bg-success-green text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base lg:text-lg font-bold mb-4 sm:mb-6 shadow-strong">
+            <div className="inline-flex items-center gap-2 bg-gradient-banner text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base lg:text-lg font-bold mb-4 sm:mb-6 shadow-strong">
               <Lock className="h-4 w-4 sm:h-5 sm:w-5" />
               OFERTA EXCLUSIVA
             </div>
