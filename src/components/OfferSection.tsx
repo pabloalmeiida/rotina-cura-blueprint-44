@@ -71,7 +71,9 @@ const OfferSection = () => {
                 <img src={mockupImage} alt="Livro A Rotina que Cura - Oferta Exclusiva de Pré-lançamento" className="w-full" />
               </div>
               {/* Exclusive badge */}
-              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-success-green text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-strong animate-pulse z-20">
+              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-strong animate-pulse z-20" style={{
+                background: 'linear-gradient(90deg, rgba(184, 11, 11, 1) 0%, rgba(212, 23, 23, 1) 100%)'
+              }}>
                 85% OFF
               </div>
               {/* Decorative elements */}
