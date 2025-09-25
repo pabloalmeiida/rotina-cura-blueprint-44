@@ -43,9 +43,7 @@ const HeroSection = () => {
                 
                 <div className="space-y-3 p-4 sm:p-6 bg-white/60 backdrop-blur-sm rounded-2xl border border-soft-gray/30">
                   <p className="text-lg sm:text-xl font-bold text-dark-text">Dra. Luciana Lavigne</p>
-                  <p className="text-sm sm:text-base text-dark-text/70 leading-relaxed">
-                    Médica especialista em Medicina Funcional Integrativa com mais de 15 anos de experiência
-                  </p>
+                  <p className="text-sm sm:text-base text-dark-text/70 leading-relaxed">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
                 </div>
               </div>
 
@@ -60,14 +58,9 @@ const HeroSection = () => {
                   </div>
                 </div>
                 
-                <Button 
-                  variant="hero" 
-                  size="xl" 
-                  className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl"
-                  style={{
-                    background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
-                  }}
-                >
+                <Button variant="hero" size="xl" className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl" style={{
+                background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+              }}>
                   QUERO MEU LIVRO COM 85% OFF
                 </Button>
               </div>
