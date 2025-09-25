@@ -100,6 +100,9 @@ const OfferSection = () => {
                 variant="cta" 
                 size="xl" 
                 className="w-full sm:w-auto text-lg sm:text-xl lg:text-2xl py-6 sm:py-8 px-8 sm:px-16 shadow-strong hover:shadow-2xl mb-4 sm:mb-6"
+                style={{
+                  background: 'linear-gradient(90deg, rgba(184, 11, 11, 1) 0%, rgba(212, 23, 23, 1) 100%)'
+                }}
               >
                 🚀 QUERO MEU LIVRO 85% OFF
               </Button>
