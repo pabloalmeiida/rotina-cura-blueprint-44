@@ -7,7 +7,7 @@ import MediaSection from "@/components/MediaSection";
 import OfferSection from "@/components/OfferSection";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import ScrollToTop from "@/components/ScrollToTop";
+
 
 const LandingPage = () => {
   return (
@@ -21,7 +21,7 @@ const LandingPage = () => {
       <OfferSection />
       <FAQ />
       <Footer />
-      <ScrollToTop />
+      
     </main>
   );
 };
