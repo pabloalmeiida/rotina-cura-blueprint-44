@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import testimonial1 from "@/assets/testimonials/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonials/testimonial-2.jpg";
@@ -71,6 +72,19 @@ const TestimonialsSection = () => {
                 ✨ Estes são apenas alguns dos <span className="text-success-green">resultados reais</span> que 
                 os princípios do livro proporcionaram aos pacientes da Dra. Luciana
               </p>
+            </div>
+
+            <div className="mt-6 sm:mt-8">
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl"
+                style={{
+                  background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+                }}
+              >
+                QUERO MEU LIVRO COM 85% OFF
+              </Button>
             </div>
           </div>
         </div>

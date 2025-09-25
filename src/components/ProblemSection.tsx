@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const ProblemSection = () => {
   const problems = [
@@ -41,6 +42,19 @@ const ProblemSection = () => {
               E mais importante: <span className="text-success-green">existe um caminho para a cura 
               que ninguém te contou.</span>
             </p>
+          </div>
+
+          <div className="text-center mt-8 sm:mt-12">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl"
+              style={{
+                background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+              }}
+            >
+              QUERO MEU LIVRO COM 85% OFF
+            </Button>
           </div>
         </div>
       </div>

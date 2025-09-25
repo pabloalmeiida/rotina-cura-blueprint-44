@@ -1,4 +1,5 @@
 import authorImage from "@/assets/person.png";
+import { Button } from "@/components/ui/button";
 
 const AuthorSection = () => {
   return (
@@ -58,6 +59,19 @@ const AuthorSection = () => {
                     para a transformação. <span className="font-bold text-success-green">Eu vivi essa cura 
                     e quero te guiar nessa jornada para A Rotina Que Cura.</span>
                   </p>
+                </div>
+
+                <div className="text-center mt-6 sm:mt-8">
+                  <Button 
+                    variant="hero" 
+                    size="xl" 
+                    className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl"
+                    style={{
+                      background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+                    }}
+                  >
+                    QUERO MEU LIVRO COM 85% OFF
+                  </Button>
                 </div>
               </div>
             </div>
