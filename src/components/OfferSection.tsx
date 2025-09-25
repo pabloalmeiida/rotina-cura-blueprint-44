@@ -38,7 +38,7 @@ const OfferSection = () => {
 
               <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-white rounded-xl shadow-soft">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-blue rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                     <Users className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
                   <div>
@@ -51,7 +51,7 @@ const OfferSection = () => {
                 </div>
 
                 <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-white rounded-xl shadow-soft">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-success-green rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                     <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
                   <div>
