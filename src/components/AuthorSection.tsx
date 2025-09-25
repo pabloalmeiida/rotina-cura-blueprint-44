@@ -61,7 +61,7 @@ const AuthorSection = () => {
                   </p>
                 </div>
 
-                <div className="text-center mt-6 sm:mt-8">
+                <div className="text-left mt-6 sm:mt-8">
                   <Button 
                     variant="hero" 
                     size="xl" 
