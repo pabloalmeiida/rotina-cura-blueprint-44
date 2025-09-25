@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Clock, Lock, Users } from "lucide-react";
 import mockupImage from "@/assets/mockup.png";
-
 const OfferSection = () => {
-  return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section font-lato">
+  return <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section font-lato">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 lg:mb-16">
@@ -15,7 +13,7 @@ const OfferSection = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-dark-text mb-4 sm:mb-6 px-2">
               OFERTA DE PRÉ-LANÇAMENTO:
             </h2>
-            <p className="text-lg sm:text-xl lg:text-2xl text-success-green font-bold mb-4 px-2">
+            <p className="text-lg sm:text-xl lg:text-2xl text-success-green mb-4 px-2 font-bold text-red-600">
               Um Valor Único e IRRESISTÍVEL para Quem Entrar no Grupo VIP!
             </p>
           </div>
@@ -70,11 +68,7 @@ const OfferSection = () => {
             {/* Book Image */}
             <div className="relative order-1 lg:order-2">
               <div className="relative z-10 max-w-xs sm:max-w-sm lg:max-w-lg mx-auto">
-                <img 
-                  src={mockupImage} 
-                  alt="Livro A Rotina que Cura - Oferta Exclusiva de Pré-lançamento"
-                  className="w-full"
-                />
+                <img src={mockupImage} alt="Livro A Rotina que Cura - Oferta Exclusiva de Pré-lançamento" className="w-full" />
               </div>
               {/* Exclusive badge */}
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-success-green text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-strong animate-pulse z-20">
@@ -96,14 +90,9 @@ const OfferSection = () => {
                 Entrar no Grupo VIP do WhatsApp para Acesso Exclusivo à Oferta de Pré-Venda
               </p>
               
-              <Button 
-                variant="cta" 
-                size="xl" 
-                className="w-full sm:w-auto text-lg sm:text-xl lg:text-2xl py-6 sm:py-8 px-8 sm:px-16 shadow-strong hover:shadow-2xl mb-4 sm:mb-6"
-                style={{
-                  background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
-                }}
-              >
+              <Button variant="cta" size="xl" className="w-full sm:w-auto text-lg sm:text-xl lg:text-2xl py-6 sm:py-8 px-8 sm:px-16 shadow-strong hover:shadow-2xl mb-4 sm:mb-6" style={{
+              background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+            }}>
                 🚀 QUERO MEU LIVRO 85% OFF
               </Button>
               
@@ -119,8 +108,6 @@ const OfferSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default OfferSection;
