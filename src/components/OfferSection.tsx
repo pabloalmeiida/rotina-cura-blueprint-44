@@ -109,11 +109,13 @@ const OfferSection = () => {
                 Entrar no Grupo VIP do WhatsApp para Acesso Exclusivo à Oferta de Pré-Venda
               </p>
               
-              <Button variant="cta" size="xl" className="w-full sm:w-auto text-lg sm:text-xl lg:text-2xl py-6 sm:py-8 px-8 sm:px-16 shadow-strong hover:shadow-2xl mb-4 sm:mb-6" style={{
-              background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
-            }}>
-                🚀 QUERO MEU LIVRO 85% OFF
-              </Button>
+              <a href="https://chat.whatsapp.com/FiJjHFWLDzWHVAcTAHsOTG?mode=ems_share_t" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="xl" className="w-full sm:w-auto text-lg sm:text-xl lg:text-2xl py-6 sm:py-8 px-8 sm:px-16 shadow-strong hover:shadow-2xl mb-4 sm:mb-6" style={{
+                background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+              }}>
+                  🚀 QUERO MEU LIVRO 85% OFF
+                </Button>
+              </a>
               
               <div className="flex items-start gap-2 text-xs sm:text-sm text-gray-600 bg-light-bg p-3 sm:p-4 rounded-lg">
                 <Lock className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0 mt-0.5" />
