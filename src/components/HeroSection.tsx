@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-cta opacity-10"></div>
           
           {/* Clock/Time element - left side */}
-          <div className="absolute left-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-10">
+          <div className="absolute left-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-5">
             <svg viewBox="0 0 200 200" className="w-full h-full">
               <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
               {/* Clock marks */}
@@ -39,18 +39,29 @@ const HeroSection = () => {
           </div>
 
           {/* DNA/Helix elements - right side */}
-          <div className="absolute right-20 top-1/3 w-32 h-64 md:w-40 md:h-80 opacity-10">
-            <svg viewBox="0 0 100 200" className="w-full h-full">
-              {/* DNA double helix */}
-              <path d="M 20 10 Q 50 30 20 50 Q 50 70 20 90 Q 50 110 20 130 Q 50 150 20 170 Q 50 190 20 210" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
-              <path d="M 80 10 Q 50 30 80 50 Q 50 70 80 90 Q 50 110 80 130 Q 50 150 80 170 Q 50 190 80 210" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-blue" />
-              {/* Connecting lines */}
-              <line x1="20" y1="30" x2="80" y2="30" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
-              <line x1="20" y1="70" x2="80" y2="70" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
-              <line x1="20" y1="110" x2="80" y2="110" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
-              <line x1="20" y1="150" x2="80" y2="150" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
+          <div className="absolute right-20 top-1/3 w-24 h-64 md:w-32 md:h-80 opacity-8">
+            <svg viewBox="0 0 80 200" className="w-full h-full">
+              {/* Stylized DNA double helix with smoother curves */}
+              <path d="M 15 0 Q 40 25 15 50 Q 40 75 15 100 Q 40 125 15 150 Q 40 175 15 200" 
+                    fill="none" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" 
+                    strokeLinecap="round" />
+              <path d="M 65 0 Q 40 25 65 50 Q 40 75 65 100 Q 40 125 65 150 Q 40 175 65 200" 
+                    fill="none" stroke="currentColor" strokeWidth="3" className="text-primary-blue" 
+                    strokeLinecap="round" />
+              {/* Connection nodes */}
+              <circle cx="15" cy="25" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="65" cy="25" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="15" cy="75" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="65" cy="75" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="15" cy="125" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="65" cy="125" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="15" cy="175" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="65" cy="175" r="3" fill="currentColor" className="text-primary-blue" />
+              {/* Subtle connecting lines */}
+              <line x1="15" y1="25" x2="65" y2="25" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
+              <line x1="15" y1="75" x2="65" y2="75" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
+              <line x1="15" y1="125" x2="65" y2="125" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
+              <line x1="15" y1="175" x2="65" y2="175" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
             </svg>
           </div>
 
