@@ -38,64 +38,32 @@ const HeroSection = () => {
             </svg>
           </div>
 
-          {/* Heartbeat/Energy Wave - right top */}
-          <div className="absolute right-20 top-1/4 w-56 h-32 md:w-72 md:h-40 opacity-6">
-            <svg viewBox="0 0 200 80" className="w-full h-full">
-              {/* ECG-style heartbeat line */}
-              <path d="M 0 40 L 30 40 L 40 20 L 50 60 L 60 30 L 70 40 L 100 40" 
-                    fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-cyan" 
-                    strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M 100 40 L 130 40 L 140 20 L 150 60 L 160 30 L 170 40 L 200 40" 
-                    fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-cyan" 
-                    strokeLinecap="round" strokeLinejoin="round" />
-              {/* Pulse dots */}
-              <circle cx="50" cy="60" r="3" fill="currentColor" className="text-primary-cyan/80" />
-              <circle cx="150" cy="60" r="3" fill="currentColor" className="text-primary-cyan/80" />
-            </svg>
-          </div>
-
-          {/* Organic Connection Network - right middle */}
-          <div className="absolute right-10 top-1/2 w-40 h-40 md:w-52 md:h-52 opacity-7">
-            <svg viewBox="0 0 120 120" className="w-full h-full">
-              {/* Network of connected nodes */}
-              <line x1="60" y1="20" x2="30" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue/40" />
-              <line x1="60" y1="20" x2="90" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/40" />
-              <line x1="30" y1="50" x2="60" y2="80" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/40" />
-              <line x1="90" y1="50" x2="60" y2="80" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue/40" />
-              <line x1="30" y1="50" x2="90" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/30" />
-              
-              {/* Nodes */}
-              <circle cx="60" cy="20" r="6" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="30" cy="50" r="5" fill="currentColor" className="text-primary-blue" />
-              <circle cx="90" cy="50" r="5" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="60" cy="80" r="6" fill="currentColor" className="text-primary-blue" />
-              
-              {/* Small satellite nodes */}
-              <circle cx="20" cy="30" r="3" fill="currentColor" className="text-primary-cyan/60" />
-              <circle cx="100" cy="30" r="3" fill="currentColor" className="text-primary-blue/60" />
-              <circle cx="60" cy="100" r="3" fill="currentColor" className="text-primary-cyan/60" />
-            </svg>
-          </div>
-
-          {/* Energy Spiral - right lower */}
-          <div className="absolute right-24 bottom-1/4 w-32 h-32 md:w-44 md:h-44 opacity-6">
+          {/* Geometric lines - right side top */}
+          <div className="absolute right-12 top-20 w-48 h-48 md:w-64 md:h-64 opacity-4">
             <svg viewBox="0 0 100 100" className="w-full h-full">
-              {/* Spiral energy pattern */}
-              <path d="M 50 50 Q 60 40 70 50 Q 80 60 70 70 Q 60 80 50 70 Q 40 60 50 50" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-blue" />
-              <path d="M 50 50 Q 55 45 60 50 Q 65 55 60 60 Q 55 65 50 60 Q 45 55 50 50" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
-              <path d="M 50 50 Q 52 48 54 50 Q 56 52 54 54 Q 52 56 50 54 Q 48 52 50 50" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-blue" />
-              
-              {/* Center glow */}
-              <circle cx="50" cy="50" r="4" fill="currentColor" className="text-primary-cyan" />
-              
-              {/* Radiating dots */}
-              <circle cx="50" cy="20" r="2" fill="currentColor" className="text-primary-cyan/70" />
-              <circle cx="80" cy="50" r="2" fill="currentColor" className="text-primary-blue/70" />
-              <circle cx="50" cy="80" r="2" fill="currentColor" className="text-primary-cyan/70" />
-              <circle cx="20" cy="50" r="2" fill="currentColor" className="text-primary-blue/70" />
+              <line x1="10" y1="30" x2="90" y2="30" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
+              <line x1="20" y1="45" x2="80" y2="45" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
+              <line x1="15" y1="60" x2="85" y2="60" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
+              <line x1="25" y1="75" x2="75" y2="75" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
+            </svg>
+          </div>
+
+          {/* Geometric lines - right side middle */}
+          <div className="absolute right-8 top-1/2 w-56 h-56 md:w-72 md:h-72 opacity-4">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <line x1="15" y1="25" x2="85" y2="25" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
+              <line x1="10" y1="40" x2="90" y2="40" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
+              <line x1="20" y1="55" x2="80" y2="55" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
+              <line x1="15" y1="70" x2="85" y2="70" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
+            </svg>
+          </div>
+
+          {/* Geometric lines - right side bottom */}
+          <div className="absolute right-16 bottom-32 w-40 h-40 md:w-52 md:h-52 opacity-4">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <line x1="20" y1="35" x2="80" y2="35" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
+              <line x1="15" y1="50" x2="85" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
+              <line x1="25" y1="65" x2="75" y2="65" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
             </svg>
           </div>
 
