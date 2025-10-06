@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/person-holding-book.png";
-import TitleLogo from "./TitleLogo";
 const HeroSection = () => {
   return <section className="relative min-h-screen font-lato overflow-hidden">
       {/* Pre-launch banner */}
@@ -33,9 +32,9 @@ const HeroSection = () => {
                       Livro Exclusivo
                     </span>
                   </div>
-                  <div className="w-full">
-                    <TitleLogo />
-                  </div>
+                  <h1 className="font-trajan text-4xl lg:text-6xl font-bold leading-tight text-dark-text tracking-wide">
+                    A ROTINA <span className="text-primary-cyan">QUE CURA</span>
+                  </h1>
                 </div>
                 
                 <p className="text-lg sm:text-xl lg:text-2xl text-dark-text/80 leading-relaxed max-w-lg font-light">
