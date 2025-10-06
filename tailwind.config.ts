@@ -87,6 +87,7 @@ export default {
       },
       fontFamily: {
         'lato': ['Lato', 'sans-serif'],
+        'cinzel': ['Cinzel', 'serif'],
       },
       boxShadow: {
         "soft": "var(--shadow-soft)",
