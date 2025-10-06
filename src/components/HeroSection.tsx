@@ -37,8 +37,59 @@ const HeroSection = () => {
               <line x1="100" y1="100" x2="130" y2="100" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
             </svg>
           </div>
+          {/* DNA Helix element - right side (similar position to clock on left) */}
+          <div className="absolute right-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-6">
+            <svg viewBox="0 0 200 200" className="w-full h-full">
+              {/* DNA double helix strands */}
+              <path d="M 70 20 Q 90 40 70 60 Q 50 80 70 100 Q 90 120 70 140 Q 50 160 70 180" 
+                    fill="none" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" 
+                    strokeLinecap="round" />
+              <path d="M 130 20 Q 110 40 130 60 Q 150 80 130 100 Q 110 120 130 140 Q 150 160 130 180" 
+                    fill="none" stroke="currentColor" strokeWidth="3" className="text-primary-blue" 
+                    strokeLinecap="round" />
+              
+              {/* Connecting base pairs */}
+              <line x1="70" y1="30" x2="130" y2="30" stroke="currentColor" strokeWidth="2" className="text-primary-cyan/60" />
+              <line x1="75" y1="50" x2="125" y2="50" stroke="currentColor" strokeWidth="2" className="text-primary-blue/60" />
+              <line x1="70" y1="70" x2="130" y2="70" stroke="currentColor" strokeWidth="2" className="text-primary-cyan/60" />
+              <line x1="75" y1="90" x2="125" y2="90" stroke="currentColor" strokeWidth="2" className="text-primary-blue/60" />
+              <line x1="70" y1="110" x2="130" y2="110" stroke="currentColor" strokeWidth="2" className="text-primary-cyan/60" />
+              <line x1="75" y1="130" x2="125" y2="130" stroke="currentColor" strokeWidth="2" className="text-primary-blue/60" />
+              <line x1="70" y1="150" x2="130" y2="150" stroke="currentColor" strokeWidth="2" className="text-primary-cyan/60" />
+              <line x1="75" y1="170" x2="125" y2="170" stroke="currentColor" strokeWidth="2" className="text-primary-blue/60" />
+              
+              {/* Connection nodes */}
+              <circle cx="70" cy="30" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="130" cy="30" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="75" cy="50" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="125" cy="50" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="70" cy="70" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="130" cy="70" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="75" cy="90" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="125" cy="90" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="70" cy="110" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="130" cy="110" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="75" cy="130" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="125" cy="130" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="70" cy="150" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="130" cy="150" r="3" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="75" cy="170" r="3" fill="currentColor" className="text-primary-blue" />
+              <circle cx="125" cy="170" r="3" fill="currentColor" className="text-primary-blue" />
+            </svg>
+          </div>
 
-          {/* Floating molecules/circles - scattered */}
+          {/* Floating circles - right side scattered (similar to left side) */}
+          <div className="absolute top-20 right-1/4 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+          <div className="absolute top-32 right-1/3 w-8 h-8 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
+          <div className="absolute top-40 right-1/5 w-6 h-6 rounded-full bg-primary-cyan/10 backdrop-blur-sm"></div>
+          
+          <div className="absolute bottom-40 left-3/4 w-16 h-16 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+          <div className="absolute bottom-32 left-2/3 w-10 h-10 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
+          <div className="absolute bottom-24 left-4/5 w-8 h-8 rounded-full bg-primary-cyan/8 backdrop-blur-sm"></div>
+          
+          <div className="absolute top-1/2 right-1/6 w-14 h-14 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
+          <div className="absolute top-1/3 left-5/6 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+
           <div className="absolute top-20 left-1/4 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
           <div className="absolute top-32 left-1/3 w-8 h-8 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
           <div className="absolute top-40 left-1/5 w-6 h-6 rounded-full bg-primary-cyan/10 backdrop-blur-sm"></div>
