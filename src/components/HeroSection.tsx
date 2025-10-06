@@ -38,30 +38,36 @@ const HeroSection = () => {
             </svg>
           </div>
 
-          {/* DNA/Helix elements - right side */}
-          <div className="absolute right-20 top-1/3 w-24 h-64 md:w-32 md:h-80 opacity-8">
-            <svg viewBox="0 0 80 200" className="w-full h-full">
-              {/* Stylized DNA double helix with smoother curves */}
-              <path d="M 15 0 Q 40 25 15 50 Q 40 75 15 100 Q 40 125 15 150 Q 40 175 15 200" 
-                    fill="none" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" 
+          {/* Molecule/Atom element - right side */}
+          <div className="absolute right-16 top-1/3 w-48 h-64 md:w-64 md:h-80 opacity-6">
+            <svg viewBox="0 0 120 200" className="w-full h-full">
+              {/* Central vertical axis with nodes */}
+              <circle cx="60" cy="40" r="6" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="60" cy="100" r="8" fill="currentColor" className="text-primary-blue" />
+              <circle cx="60" cy="160" r="6" fill="currentColor" className="text-primary-cyan" />
+              
+              {/* Orbital/wave paths */}
+              <path d="M 20 40 Q 40 60 60 60 Q 80 60 100 40" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" 
                     strokeLinecap="round" />
-              <path d="M 65 0 Q 40 25 65 50 Q 40 75 65 100 Q 40 125 65 150 Q 40 175 65 200" 
-                    fill="none" stroke="currentColor" strokeWidth="3" className="text-primary-blue" 
+              <path d="M 20 100 Q 40 120 60 120 Q 80 120 100 100" 
+                    fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-blue" 
                     strokeLinecap="round" />
-              {/* Connection nodes */}
-              <circle cx="15" cy="25" r="3" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="65" cy="25" r="3" fill="currentColor" className="text-primary-blue" />
-              <circle cx="15" cy="75" r="3" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="65" cy="75" r="3" fill="currentColor" className="text-primary-blue" />
-              <circle cx="15" cy="125" r="3" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="65" cy="125" r="3" fill="currentColor" className="text-primary-blue" />
-              <circle cx="15" cy="175" r="3" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="65" cy="175" r="3" fill="currentColor" className="text-primary-blue" />
-              {/* Subtle connecting lines */}
-              <line x1="15" y1="25" x2="65" y2="25" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
-              <line x1="15" y1="75" x2="65" y2="75" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
-              <line x1="15" y1="125" x2="65" y2="125" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
-              <line x1="15" y1="175" x2="65" y2="175" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/30" />
+              <path d="M 20 160 Q 40 180 60 180 Q 80 180 100 160" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" 
+                    strokeLinecap="round" />
+              
+              {/* Side nodes */}
+              <circle cx="20" cy="40" r="4" fill="currentColor" className="text-primary-cyan/70" />
+              <circle cx="100" cy="40" r="4" fill="currentColor" className="text-primary-cyan/70" />
+              <circle cx="20" cy="100" r="5" fill="currentColor" className="text-primary-blue/70" />
+              <circle cx="100" cy="100" r="5" fill="currentColor" className="text-primary-blue/70" />
+              <circle cx="20" cy="160" r="4" fill="currentColor" className="text-primary-cyan/70" />
+              <circle cx="100" cy="160" r="4" fill="currentColor" className="text-primary-cyan/70" />
+              
+              {/* Connecting vertical lines */}
+              <line x1="60" y1="46" x2="60" y2="92" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/40" strokeDasharray="3,3" />
+              <line x1="60" y1="108" x2="60" y2="154" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue/40" strokeDasharray="3,3" />
             </svg>
           </div>
 
