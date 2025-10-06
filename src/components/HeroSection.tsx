@@ -12,13 +12,36 @@ const HeroSection = () => {
       </div>
 
       {/* Main hero content */}
-      <div className="relative min-h-[95vh] bg-gradient-elegant">
-        {/* Decorative elements */}
+      <div className="relative min-h-[95vh] bg-gradient-elegant overflow-hidden">
+        {/* Decorative book-themed elements */}
         <div className="absolute inset-0 overflow-hidden">
+          {/* Gradient overlays */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-cta opacity-10"></div>
+          
+          {/* Book pages effect - left side */}
+          <div className="absolute left-0 top-1/4 w-64 h-80 bg-white/5 transform -rotate-12 border-l-4 border-primary-cyan/20"></div>
+          <div className="absolute left-10 top-1/3 w-56 h-72 bg-white/3 transform -rotate-6 border-l-4 border-primary-cyan/10"></div>
+          
+          {/* Book pages effect - right side */}
+          <div className="absolute right-0 bottom-1/4 w-72 h-96 bg-white/5 transform rotate-12 border-r-4 border-primary-blue/20"></div>
+          <div className="absolute right-10 bottom-1/3 w-64 h-80 bg-white/3 transform rotate-6 border-r-4 border-primary-blue/10"></div>
+          
+          {/* Floating text lines (representing book content) */}
+          <div className="absolute top-20 left-1/4 w-32 h-0.5 bg-primary-cyan/10"></div>
+          <div className="absolute top-24 left-1/4 w-40 h-0.5 bg-primary-cyan/10"></div>
+          <div className="absolute top-28 left-1/4 w-36 h-0.5 bg-primary-cyan/10"></div>
+          
+          <div className="absolute bottom-32 right-1/4 w-28 h-0.5 bg-primary-blue/10"></div>
+          <div className="absolute bottom-36 right-1/4 w-36 h-0.5 bg-primary-blue/10"></div>
+          <div className="absolute bottom-40 right-1/4 w-32 h-0.5 bg-primary-blue/10"></div>
+          
+          {/* Glowing orbs */}
           <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary-cyan/20 rounded-full blur-3xl md:-top-40 md:-right-40 md:w-80 md:h-80"></div>
           <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary-blue/20 rounded-full blur-3xl md:-bottom-40 md:-left-40 md:w-80 md:h-80"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary-cyan/10 rounded-full blur-3xl md:w-96 md:h-96"></div>
+          
+          {/* Book spine effect */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-primary-cyan/20 to-transparent"></div>
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
