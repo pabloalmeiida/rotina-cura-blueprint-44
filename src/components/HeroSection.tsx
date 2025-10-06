@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-cta opacity-10"></div>
           
           {/* Clock/Time element - left side */}
-          <div className="absolute left-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-8">
+          <div className="absolute left-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-6">
             <svg viewBox="0 0 200 200" className="w-full h-full">
               <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
               {/* Clock marks */}
