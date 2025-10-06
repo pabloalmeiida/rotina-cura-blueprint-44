@@ -1,16 +1,11 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import testimonial1 from "@/assets/testimonials/testimonial-1.jpg";
-import testimonial2 from "@/assets/testimonials/testimonial-2.jpg";
-import testimonial3 from "@/assets/testimonials/testimonial-3.jpg";
-import testimonial4 from "@/assets/testimonials/testimonial-4.jpg";
-import testimonial5 from "@/assets/testimonials/testimonial-5.jpg";
-import testimonial6 from "@/assets/testimonials/testimonial-6.jpg";
-import testimonial7 from "@/assets/testimonials/testimonial-7.jpg";
-import testimonial8 from "@/assets/testimonials/testimonial-8.jpg";
-import testimonial9 from "@/assets/testimonials/testimonial-9.jpg";
-import testimonial10 from "@/assets/testimonials/testimonial-10.jpg";
+import testimonial1 from "@/assets/testimonials/testimonial-new-1.jpg";
+import testimonial2 from "@/assets/testimonials/testimonial-new-2.jpg";
+import testimonial3 from "@/assets/testimonials/testimonial-new-3.jpg";
+import testimonial4 from "@/assets/testimonials/testimonial-new-4.jpg";
+import testimonial5 from "@/assets/testimonials/testimonial-new-5.jpg";
 
 const TestimonialsSection = () => {
   const testimonialImages = [
@@ -18,12 +13,7 @@ const TestimonialsSection = () => {
     testimonial2, 
     testimonial3,
     testimonial4,
-    testimonial5,
-    testimonial6,
-    testimonial7,
-    testimonial8,
-    testimonial9,
-    testimonial10
+    testimonial5
   ];
 
   return (
