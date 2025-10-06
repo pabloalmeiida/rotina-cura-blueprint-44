@@ -38,36 +38,64 @@ const HeroSection = () => {
             </svg>
           </div>
 
-          {/* Molecule/Atom element - right side */}
-          <div className="absolute right-16 top-1/3 w-48 h-64 md:w-64 md:h-80 opacity-6">
-            <svg viewBox="0 0 120 200" className="w-full h-full">
-              {/* Central vertical axis with nodes */}
-              <circle cx="60" cy="40" r="6" fill="currentColor" className="text-primary-cyan" />
-              <circle cx="60" cy="100" r="8" fill="currentColor" className="text-primary-blue" />
-              <circle cx="60" cy="160" r="6" fill="currentColor" className="text-primary-cyan" />
+          {/* Heartbeat/Energy Wave - right top */}
+          <div className="absolute right-20 top-1/4 w-56 h-32 md:w-72 md:h-40 opacity-6">
+            <svg viewBox="0 0 200 80" className="w-full h-full">
+              {/* ECG-style heartbeat line */}
+              <path d="M 0 40 L 30 40 L 40 20 L 50 60 L 60 30 L 70 40 L 100 40" 
+                    fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-cyan" 
+                    strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M 100 40 L 130 40 L 140 20 L 150 60 L 160 30 L 170 40 L 200 40" 
+                    fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-cyan" 
+                    strokeLinecap="round" strokeLinejoin="round" />
+              {/* Pulse dots */}
+              <circle cx="50" cy="60" r="3" fill="currentColor" className="text-primary-cyan/80" />
+              <circle cx="150" cy="60" r="3" fill="currentColor" className="text-primary-cyan/80" />
+            </svg>
+          </div>
+
+          {/* Organic Connection Network - right middle */}
+          <div className="absolute right-10 top-1/2 w-40 h-40 md:w-52 md:h-52 opacity-7">
+            <svg viewBox="0 0 120 120" className="w-full h-full">
+              {/* Network of connected nodes */}
+              <line x1="60" y1="20" x2="30" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue/40" />
+              <line x1="60" y1="20" x2="90" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/40" />
+              <line x1="30" y1="50" x2="60" y2="80" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/40" />
+              <line x1="90" y1="50" x2="60" y2="80" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue/40" />
+              <line x1="30" y1="50" x2="90" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/30" />
               
-              {/* Orbital/wave paths */}
-              <path d="M 20 40 Q 40 60 60 60 Q 80 60 100 40" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" 
-                    strokeLinecap="round" />
-              <path d="M 20 100 Q 40 120 60 120 Q 80 120 100 100" 
-                    fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-blue" 
-                    strokeLinecap="round" />
-              <path d="M 20 160 Q 40 180 60 180 Q 80 180 100 160" 
-                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" 
-                    strokeLinecap="round" />
+              {/* Nodes */}
+              <circle cx="60" cy="20" r="6" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="30" cy="50" r="5" fill="currentColor" className="text-primary-blue" />
+              <circle cx="90" cy="50" r="5" fill="currentColor" className="text-primary-cyan" />
+              <circle cx="60" cy="80" r="6" fill="currentColor" className="text-primary-blue" />
               
-              {/* Side nodes */}
-              <circle cx="20" cy="40" r="4" fill="currentColor" className="text-primary-cyan/70" />
-              <circle cx="100" cy="40" r="4" fill="currentColor" className="text-primary-cyan/70" />
-              <circle cx="20" cy="100" r="5" fill="currentColor" className="text-primary-blue/70" />
-              <circle cx="100" cy="100" r="5" fill="currentColor" className="text-primary-blue/70" />
-              <circle cx="20" cy="160" r="4" fill="currentColor" className="text-primary-cyan/70" />
-              <circle cx="100" cy="160" r="4" fill="currentColor" className="text-primary-cyan/70" />
+              {/* Small satellite nodes */}
+              <circle cx="20" cy="30" r="3" fill="currentColor" className="text-primary-cyan/60" />
+              <circle cx="100" cy="30" r="3" fill="currentColor" className="text-primary-blue/60" />
+              <circle cx="60" cy="100" r="3" fill="currentColor" className="text-primary-cyan/60" />
+            </svg>
+          </div>
+
+          {/* Energy Spiral - right lower */}
+          <div className="absolute right-24 bottom-1/4 w-32 h-32 md:w-44 md:h-44 opacity-6">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              {/* Spiral energy pattern */}
+              <path d="M 50 50 Q 60 40 70 50 Q 80 60 70 70 Q 60 80 50 70 Q 40 60 50 50" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-blue" />
+              <path d="M 50 50 Q 55 45 60 50 Q 65 55 60 60 Q 55 65 50 60 Q 45 55 50 50" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+              <path d="M 50 50 Q 52 48 54 50 Q 56 52 54 54 Q 52 56 50 54 Q 48 52 50 50" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-blue" />
               
-              {/* Connecting vertical lines */}
-              <line x1="60" y1="46" x2="60" y2="92" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan/40" strokeDasharray="3,3" />
-              <line x1="60" y1="108" x2="60" y2="154" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue/40" strokeDasharray="3,3" />
+              {/* Center glow */}
+              <circle cx="50" cy="50" r="4" fill="currentColor" className="text-primary-cyan" />
+              
+              {/* Radiating dots */}
+              <circle cx="50" cy="20" r="2" fill="currentColor" className="text-primary-cyan/70" />
+              <circle cx="80" cy="50" r="2" fill="currentColor" className="text-primary-blue/70" />
+              <circle cx="50" cy="80" r="2" fill="currentColor" className="text-primary-cyan/70" />
+              <circle cx="20" cy="50" r="2" fill="currentColor" className="text-primary-blue/70" />
             </svg>
           </div>
 
