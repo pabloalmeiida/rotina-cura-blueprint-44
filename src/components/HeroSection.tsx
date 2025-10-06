@@ -13,27 +13,63 @@ const HeroSection = () => {
 
       {/* Main hero content */}
       <div className="relative min-h-[95vh] bg-gradient-elegant overflow-hidden">
-        {/* Decorative book-themed elements */}
+        {/* Decorative elements inspired by health, routine, and vitality */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Gradient overlays */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-cta opacity-10"></div>
           
-          {/* Floating text lines (representing book content) */}
-          <div className="absolute top-20 left-1/4 w-32 h-0.5 bg-primary-cyan/10"></div>
-          <div className="absolute top-24 left-1/4 w-40 h-0.5 bg-primary-cyan/10"></div>
-          <div className="absolute top-28 left-1/4 w-36 h-0.5 bg-primary-cyan/10"></div>
+          {/* Clock/Time element - left side */}
+          <div className="absolute left-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-10">
+            <svg viewBox="0 0 200 200" className="w-full h-full">
+              <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
+              {/* Clock marks */}
+              <line x1="100" y1="15" x2="100" y2="25" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+              <line x1="100" y1="175" x2="100" y2="185" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+              <line x1="15" y1="100" x2="25" y2="100" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" />
+              <line x1="175" y1="100" x2="185" y2="100" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" />
+              {/* Diagonal marks */}
+              <line x1="35" y1="35" x2="42" y2="42" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
+              <line x1="165" y1="35" x2="158" y2="42" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
+              <line x1="35" y1="165" x2="42" y2="158" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
+              <line x1="165" y1="165" x2="158" y2="158" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
+              {/* Clock hands */}
+              <line x1="100" y1="100" x2="100" y2="50" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+              <line x1="100" y1="100" x2="130" y2="100" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+            </svg>
+          </div>
+
+          {/* DNA/Helix elements - right side */}
+          <div className="absolute right-20 top-1/3 w-32 h-64 md:w-40 md:h-80 opacity-10">
+            <svg viewBox="0 0 100 200" className="w-full h-full">
+              {/* DNA double helix */}
+              <path d="M 20 10 Q 50 30 20 50 Q 50 70 20 90 Q 50 110 20 130 Q 50 150 20 170 Q 50 190 20 210" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+              <path d="M 80 10 Q 50 30 80 50 Q 50 70 80 90 Q 50 110 80 130 Q 50 150 80 170 Q 50 190 80 210" 
+                    fill="none" stroke="currentColor" strokeWidth="2" className="text-primary-blue" />
+              {/* Connecting lines */}
+              <line x1="20" y1="30" x2="80" y2="30" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
+              <line x1="20" y1="70" x2="80" y2="70" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
+              <line x1="20" y1="110" x2="80" y2="110" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
+              <line x1="20" y1="150" x2="80" y2="150" stroke="currentColor" strokeWidth="1" className="text-primary-cyan/50" />
+            </svg>
+          </div>
+
+          {/* Floating molecules/circles - scattered */}
+          <div className="absolute top-20 left-1/4 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+          <div className="absolute top-32 left-1/3 w-8 h-8 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
+          <div className="absolute top-40 left-1/5 w-6 h-6 rounded-full bg-primary-cyan/10 backdrop-blur-sm"></div>
           
-          <div className="absolute bottom-32 right-1/4 w-28 h-0.5 bg-primary-blue/10"></div>
-          <div className="absolute bottom-36 right-1/4 w-36 h-0.5 bg-primary-blue/10"></div>
-          <div className="absolute bottom-40 right-1/4 w-32 h-0.5 bg-primary-blue/10"></div>
+          <div className="absolute bottom-40 right-1/4 w-16 h-16 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+          <div className="absolute bottom-32 right-1/3 w-10 h-10 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
+          <div className="absolute bottom-24 right-1/5 w-8 h-8 rounded-full bg-primary-cyan/8 backdrop-blur-sm"></div>
           
-          {/* Glowing orbs */}
+          <div className="absolute top-1/2 left-1/6 w-14 h-14 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
+          <div className="absolute top-1/3 right-1/6 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+
+          {/* Glowing orbs for depth */}
           <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary-cyan/20 rounded-full blur-3xl md:-top-40 md:-right-40 md:w-80 md:h-80"></div>
           <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary-blue/20 rounded-full blur-3xl md:-bottom-40 md:-left-40 md:w-80 md:h-80"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary-cyan/10 rounded-full blur-3xl md:w-96 md:h-96"></div>
-          
-          {/* Book spine effect */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-primary-cyan/20 to-transparent"></div>
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
