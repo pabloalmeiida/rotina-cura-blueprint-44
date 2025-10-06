@@ -18,14 +18,6 @@ const HeroSection = () => {
           {/* Gradient overlays */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-cta opacity-10"></div>
           
-          {/* Book pages effect - left side */}
-          <div className="absolute left-0 top-1/4 w-64 h-80 bg-white/5 transform -rotate-12 border-l-4 border-primary-cyan/20"></div>
-          <div className="absolute left-10 top-1/3 w-56 h-72 bg-white/3 transform -rotate-6 border-l-4 border-primary-cyan/10"></div>
-          
-          {/* Book pages effect - right side */}
-          <div className="absolute right-0 bottom-1/4 w-72 h-96 bg-white/5 transform rotate-12 border-r-4 border-primary-blue/20"></div>
-          <div className="absolute right-10 bottom-1/3 w-64 h-80 bg-white/3 transform rotate-6 border-r-4 border-primary-blue/10"></div>
-          
           {/* Floating text lines (representing book content) */}
           <div className="absolute top-20 left-1/4 w-32 h-0.5 bg-primary-cyan/10"></div>
           <div className="absolute top-24 left-1/4 w-40 h-0.5 bg-primary-cyan/10"></div>
