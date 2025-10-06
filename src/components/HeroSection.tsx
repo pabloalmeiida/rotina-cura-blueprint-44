@@ -38,35 +38,6 @@ const HeroSection = () => {
             </svg>
           </div>
 
-          {/* Geometric lines - right side top */}
-          <div className="absolute right-12 top-20 w-48 h-48 md:w-64 md:h-64 opacity-4">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <line x1="10" y1="30" x2="90" y2="30" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-              <line x1="20" y1="45" x2="80" y2="45" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
-              <line x1="15" y1="60" x2="85" y2="60" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-              <line x1="25" y1="75" x2="75" y2="75" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
-            </svg>
-          </div>
-
-          {/* Geometric lines - right side middle */}
-          <div className="absolute right-8 top-1/2 w-56 h-56 md:w-72 md:h-72 opacity-4">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <line x1="15" y1="25" x2="85" y2="25" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-              <line x1="10" y1="40" x2="90" y2="40" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
-              <line x1="20" y1="55" x2="80" y2="55" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-              <line x1="15" y1="70" x2="85" y2="70" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
-            </svg>
-          </div>
-
-          {/* Geometric lines - right side bottom */}
-          <div className="absolute right-16 bottom-32 w-40 h-40 md:w-52 md:h-52 opacity-4">
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <line x1="20" y1="35" x2="80" y2="35" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-              <line x1="15" y1="50" x2="85" y2="50" stroke="currentColor" strokeWidth="1.5" className="text-primary-blue" />
-              <line x1="25" y1="65" x2="75" y2="65" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-            </svg>
-          </div>
-
           {/* Floating molecules/circles - scattered */}
           <div className="absolute top-20 left-1/4 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
           <div className="absolute top-32 left-1/3 w-8 h-8 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
