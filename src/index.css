@@ -6,6 +6,23 @@
 All colors MUST be HSL.
 */
 
+/* Trajan Pro Font */
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/TrajanPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/TrajanPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
