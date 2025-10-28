@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
               </p>
             </div>
 
-            <div className="mt-6 sm:mt-8">
+            <div className="mt-6 sm:mt-8 flex justify-center">
               <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer">
                 <Button 
                   variant="hero" 
