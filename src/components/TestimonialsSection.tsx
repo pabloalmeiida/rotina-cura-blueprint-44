@@ -6,6 +6,7 @@ import testimonial2 from "@/assets/testimonials/testimonial-new-2.jpg";
 import testimonial3 from "@/assets/testimonials/testimonial-new-3.jpg";
 import testimonial4 from "@/assets/testimonials/testimonial-new-4.jpg";
 import testimonial5 from "@/assets/testimonials/testimonial-new-5.jpg";
+import launchEvent from "@/assets/book-launch-event.jpg";
 
 const TestimonialsSection = () => {
   const testimonialImages = [
@@ -56,25 +57,41 @@ const TestimonialsSection = () => {
             </Carousel>
           </div>
 
-          <div className="text-center mt-8 sm:mt-12">
-            <div className="bg-success-green/10 p-4 sm:p-6 rounded-xl inline-block">
+          <div className="mt-12 sm:mt-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark-text mb-4">
+                Centenas de Pessoas Já Adquiriram o Livro!
+              </h3>
+            </div>
+
+            <div className="max-w-4xl mx-auto mb-8">
+              <div className="bg-gradient-section p-4 sm:p-6 rounded-2xl shadow-soft border border-soft-gray/30">
+                <img 
+                  src={launchEvent} 
+                  alt="Evento de lançamento do livro A Rotina Que Cura com leitores"
+                  className="w-full h-auto rounded-xl shadow-strong"
+                />
+              </div>
+            </div>
+
+            <div className="bg-primary-cyan/10 p-4 sm:p-6 rounded-xl inline-block mb-6">
               <p className="text-dark-text font-semibold text-sm sm:text-base lg:text-lg px-2">
-                ✨ Estes são apenas alguns dos <span className="text-success-green">resultados reais</span> que 
+                ✨ Estes são apenas alguns dos <span className="text-primary-cyan">resultados reais</span> que 
                 os princípios do livro proporcionaram aos pacientes da Dra. Luciana
               </p>
             </div>
 
             <div className="mt-6 sm:mt-8">
-              <a href="https://chat.whatsapp.com/FiJjHFWLDzWHVAcTAHsOTG?mode=ems_share_t" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer">
                 <Button 
                   variant="hero" 
                   size="xl" 
-                  className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl"
+                  className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all"
                   style={{
-                    background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+                    background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
                   }}
                 >
-                  QUERO MEU LIVRO COM 85% OFF
+                  QUERO MEU LIVRO AGORA
                 </Button>
               </a>
             </div>

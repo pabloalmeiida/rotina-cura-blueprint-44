@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/person-holding-book.png";
 const HeroSection = () => {
   return <section className="relative min-h-screen font-lato overflow-hidden">
-      {/* Pre-launch banner */}
-      <div className="relative z-20 bg-gradient-banner text-white py-4">
+      {/* Launch banner */}
+      <div className="relative z-20 bg-primary-cyan text-white py-4">
         <div className="container mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 text-sm font-bold tracking-wide">
-            ✨ PRÉ-LANÇAMENTO 85% OFF - OFERTA IRRESISTÍVEL
+            📚 Livro já disponível para venda!
           </div>
         </div>
       </div>
@@ -94,21 +94,21 @@ const HeroSection = () => {
               </div>
 
               <div className="space-y-6 lg:space-y-8">
-                <div className="space-y-4">
-                  <p className="text-base sm:text-lg leading-relaxed text-dark-text/80 max-w-md">
-                    Entre para nossa lista de espera e receba nossa oferta exclusiva de pré-lançamento.
+              <div className="space-y-4">
+                  <p className="text-base sm:text-lg leading-relaxed text-dark-text/80 max-w-md font-semibold">
+                    Experimente agora o método que está transformando vidas!
                   </p>
-                  <div className="flex items-center gap-3 text-sm text-primary-cyan font-semibold">
-                    <div className="w-2 h-2 bg-primary-cyan rounded-full"></div>
-                    <span>Oferta válida por tempo limitado</span>
+                  <div className="flex items-center gap-3 text-sm text-accent-gold font-semibold">
+                    <div className="w-2 h-2 bg-accent-gold rounded-full"></div>
+                    <span>Seu exemplar com frete grátis para todo o Brasil!</span>
                   </div>
                 </div>
                 
-                <a href="https://chat.whatsapp.com/FiJjHFWLDzWHVAcTAHsOTG?mode=ems_share_t" target="_blank" rel="noopener noreferrer">
-                  <Button variant="hero" size="xl" className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl" style={{
-                  background: 'linear-gradient(90deg, rgba(20, 171, 12, 1) 0%, rgba(20, 176, 12, 1) 100%)'
+                <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer">
+                  <Button variant="hero" size="xl" className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all" style={{
+                  background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
                 }}>
-                    QUERO MEU LIVRO COM 85% OFF
+                    QUERO MEU LIVRO AGORA
                   </Button>
                 </a>
               </div>
