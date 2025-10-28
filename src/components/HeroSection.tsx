@@ -12,59 +12,58 @@ const HeroSection = () => {
       </div>
 
       {/* Main hero content */}
-      <div className="relative min-h-[95vh] bg-gradient-elegant overflow-hidden">
-        {/* Decorative elements inspired by health, routine, and vitality */}
+      <div className="relative min-h-[95vh] overflow-hidden" style={{
+        background: 'linear-gradient(135deg, #F5F1E8 0%, #E8DFD0 50%, #F5F1E8 100%)'
+      }}>
+        {/* Elegant decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Gradient overlays */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-cta opacity-10"></div>
-          
-          {/* Clock/Time element - left side */}
-          <div className="absolute left-10 top-1/4 w-64 h-64 md:w-96 md:h-96 opacity-[0.12]">
-            <svg viewBox="0 0 200 200" className="w-full h-full">
-              <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary-cyan" />
-              {/* Clock marks */}
-              <line x1="100" y1="15" x2="100" y2="25" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
-              <line x1="100" y1="175" x2="100" y2="185" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
-              <line x1="15" y1="100" x2="25" y2="100" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" />
-              <line x1="175" y1="100" x2="185" y2="100" stroke="currentColor" strokeWidth="3" className="text-primary-cyan" />
-              {/* Diagonal marks */}
-              <line x1="35" y1="35" x2="42" y2="42" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
-              <line x1="165" y1="35" x2="158" y2="42" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
-              <line x1="35" y1="165" x2="42" y2="158" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
-              <line x1="165" y1="165" x2="158" y2="158" stroke="currentColor" strokeWidth="1.5" className="text-primary-cyan" />
-              {/* Clock hands */}
-              <line x1="100" y1="100" x2="100" y2="50" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
-              <line x1="100" y1="100" x2="130" y2="100" stroke="currentColor" strokeWidth="2" className="text-primary-cyan" />
+          {/* Soft organic shapes */}
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-30">
+            <svg viewBox="0 0 600 600" className="w-full h-full">
+              <path 
+                d="M 0,150 Q 150,0 300,50 T 600,100 L 600,0 L 0,0 Z" 
+                fill="url(#gradient1)" 
+                opacity="0.3"
+              />
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style={{ stopColor: '#D4C5B0', stopOpacity: 0.4 }} />
+                  <stop offset="100%" style={{ stopColor: '#C9B99A', stopOpacity: 0.2 }} />
+                </linearGradient>
+              </defs>
             </svg>
           </div>
 
-          {/* Floating circles - right side scattered (similar to left side) */}
-          <div className="absolute top-20 right-1/4 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
-          <div className="absolute top-32 right-1/3 w-8 h-8 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
-          <div className="absolute top-40 right-1/5 w-6 h-6 rounded-full bg-primary-cyan/10 backdrop-blur-sm"></div>
-          
-          <div className="absolute bottom-40 left-3/4 w-16 h-16 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
-          <div className="absolute bottom-32 left-2/3 w-10 h-10 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
-          <div className="absolute bottom-24 left-4/5 w-8 h-8 rounded-full bg-primary-cyan/8 backdrop-blur-sm"></div>
-          
-          <div className="absolute top-1/2 right-1/6 w-14 h-14 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
-          <div className="absolute top-1/3 left-5/6 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+          <div className="absolute bottom-0 left-0 w-[700px] h-[700px] opacity-25">
+            <svg viewBox="0 0 700 700" className="w-full h-full">
+              <path 
+                d="M 0,600 Q 200,550 350,600 T 700,550 L 700,700 L 0,700 Z" 
+                fill="url(#gradient2)" 
+                opacity="0.4"
+              />
+              <defs>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style={{ stopColor: '#E8DFD0', stopOpacity: 0.3 }} />
+                  <stop offset="100%" style={{ stopColor: '#D4C5B0', stopOpacity: 0.2 }} />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
 
-          <div className="absolute top-20 left-1/4 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
-          <div className="absolute top-32 left-1/3 w-8 h-8 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
-          <div className="absolute top-40 left-1/5 w-6 h-6 rounded-full bg-primary-cyan/10 backdrop-blur-sm"></div>
-          
-          <div className="absolute bottom-40 right-1/4 w-16 h-16 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
-          <div className="absolute bottom-32 right-1/3 w-10 h-10 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
-          <div className="absolute bottom-24 right-1/5 w-8 h-8 rounded-full bg-primary-cyan/8 backdrop-blur-sm"></div>
-          
-          <div className="absolute top-1/2 left-1/6 w-14 h-14 rounded-full bg-primary-blue/5 backdrop-blur-sm"></div>
-          <div className="absolute top-1/3 right-1/6 w-12 h-12 rounded-full bg-primary-cyan/5 backdrop-blur-sm"></div>
+          {/* Subtle accent circles */}
+          <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full" style={{
+            background: 'radial-gradient(circle, rgba(212, 197, 176, 0.15) 0%, transparent 70%)'
+          }}></div>
+          <div className="absolute bottom-1/3 right-1/4 w-48 h-48 rounded-full" style={{
+            background: 'radial-gradient(circle, rgba(201, 185, 154, 0.12) 0%, transparent 70%)'
+          }}></div>
+          <div className="absolute top-1/2 right-1/3 w-24 h-24 rounded-full" style={{
+            background: 'radial-gradient(circle, rgba(232, 223, 208, 0.2) 0%, transparent 70%)'
+          }}></div>
 
-          {/* Glowing orbs for depth */}
-          <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary-cyan/20 rounded-full blur-3xl md:-top-40 md:-right-40 md:w-80 md:h-80"></div>
-          <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary-blue/20 rounded-full blur-3xl md:-bottom-40 md:-left-40 md:w-80 md:h-80"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary-cyan/10 rounded-full blur-3xl md:w-96 md:h-96"></div>
+          {/* Elegant line accents */}
+          <div className="absolute top-20 right-20 w-64 h-px bg-gradient-to-r from-transparent via-accent-gold/20 to-transparent"></div>
+          <div className="absolute bottom-32 left-32 w-48 h-px bg-gradient-to-r from-transparent via-accent-gold/15 to-transparent"></div>
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
@@ -117,10 +116,38 @@ const HeroSection = () => {
             {/* Image */}
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative max-w-xs sm:max-w-md lg:max-w-lg mx-auto">
-                <div className="absolute -inset-2 sm:-inset-4 bg-gradient-cta opacity-20 rounded-3xl blur-2xl"></div>
-                <img src={heroImage} alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura" className="relative w-full h-auto rounded-3xl shadow-strong border-4 border-white/50" />
-                <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 bg-primary-cyan text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-custom">
-                  ✨ Exclusivo
+                {/* Elegant background shape */}
+                <div className="absolute inset-0 -z-10 transform translate-x-4 translate-y-4">
+                  <div className="w-full h-full rounded-3xl" style={{
+                    background: 'linear-gradient(135deg, rgba(212, 197, 176, 0.3) 0%, rgba(201, 185, 154, 0.2) 100%)',
+                    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.08)'
+                  }}></div>
+                </div>
+                
+                {/* Decorative frame */}
+                <div className="absolute -inset-3 rounded-3xl" style={{
+                  border: '1px solid rgba(212, 197, 176, 0.3)',
+                  boxShadow: '0 0 40px rgba(212, 197, 176, 0.15)'
+                }}></div>
+                
+                <div className="relative">
+                  <img 
+                    src={heroImage} 
+                    alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura" 
+                    className="relative w-full h-auto rounded-3xl shadow-strong"
+                    style={{
+                      boxShadow: '0 25px 50px rgba(0, 0, 0, 0.12)'
+                    }}
+                  />
+                  
+                  {/* Elegant badge */}
+                  <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-strong backdrop-blur-sm" style={{
+                    background: 'linear-gradient(135deg, hsl(var(--accent-gold)) 0%, #D4A574 100%)',
+                    color: '#FFFFFF',
+                    boxShadow: '0 8px 24px rgba(212, 165, 116, 0.4)'
+                  }}>
+                    ✨ Exclusivo
+                  </div>
                 </div>
               </div>
             </div>
