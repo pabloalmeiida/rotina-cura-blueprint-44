@@ -164,15 +164,6 @@ const HeroSection = () => {
                       boxShadow: '0 25px 50px rgba(0, 0, 0, 0.12)'
                     }}
                   />
-                  
-                  {/* Elegant badge */}
-                  <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-strong backdrop-blur-sm" style={{
-                    background: 'linear-gradient(135deg, hsl(var(--primary-cyan)) 0%, hsl(var(--primary-blue)) 100%)',
-                    color: '#FFFFFF',
-                    boxShadow: '0 8px 24px rgba(1, 181, 200, 0.4)'
-                  }}>
-                    ✨ Exclusivo
-                  </div>
                 </div>
               </div>
             </div>
