@@ -71,8 +71,8 @@ All colors MUST be HSL.
     /* Gradientes com as novas cores */
     --gradient-hero: linear-gradient(135deg, hsl(209 46% 13%) 0%, hsl(41 55% 67%) 50%, hsl(209 46% 13%) 100%);
     --gradient-section: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 96%));
-    --gradient-cta: linear-gradient(90deg, hsl(41 55% 60%) 0%, hsl(41 55% 75%) 100%);
-    --gradient-banner: linear-gradient(90deg, hsl(41 55% 60%) 0%, hsl(41 55% 67%) 100%);
+    --gradient-cta: linear-gradient(90deg, rgba(216, 188, 128, 1) 0%, rgba(173, 143, 78, 1) 100%);
+    --gradient-banner: linear-gradient(90deg, rgba(216, 188, 128, 1) 0%, rgba(173, 143, 78, 1) 100%);
     --gradient-elegant: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 96%) 100%);
     
     /* Sombras personalizadas */
