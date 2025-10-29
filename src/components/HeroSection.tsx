@@ -111,15 +111,30 @@ const HeroSection = () => {
                   Um guia estratégico aplicado e validado em <span className="font-semibold text-accent-gold">centenas de pacientes</span>, para ter mais energia, saúde e vitalidade.
                 </p>
                 
-                <div className="relative space-y-3 p-6 sm:p-8 rounded-3xl backdrop-blur-xl" style={{
-                  background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(249, 250, 251, 0.8))',
-                  boxShadow: '0 8px 32px rgba(216, 188, 128, 0.25), 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.5)',
-                  border: '1px solid rgba(216, 188, 128, 0.35)',
-                  backdropFilter: 'blur(20px) saturate(180%)',
-                  WebkitBackdropFilter: 'blur(20px) saturate(180%)'
+                <div className="relative space-y-3 p-6 sm:p-8 rounded-3xl transition-all duration-500 ease-out hover:scale-[1.02] hover:shadow-2xl group" style={{
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(249, 250, 251, 0.9) 100%)',
+                  boxShadow: '0 8px 32px rgba(216, 188, 128, 0.3), 0 0 80px rgba(216, 188, 128, 0.15), inset 0 2px 4px rgba(255, 255, 255, 0.8), inset 0 -2px 4px rgba(216, 188, 128, 0.1)',
+                  border: '1px solid rgba(216, 188, 128, 0.4)',
+                  backdropFilter: 'blur(10px) saturate(200%)',
+                  WebkitBackdropFilter: 'blur(10px) saturate(200%)',
+                  position: 'relative',
+                  overflow: 'hidden'
                 }}>
-                  <p className="text-xl sm:text-2xl font-bold text-dark-text">Dra. Luciana Lavigne</p>
-                  <p className="text-base sm:text-lg text-dark-text/70 leading-relaxed">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
+                  {/* Shine effect on hover */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" style={{
+                    background: 'linear-gradient(110deg, transparent 25%, rgba(255, 255, 255, 0.5) 50%, transparent 75%)',
+                    transform: 'translateX(-100%)',
+                    animation: 'shine 0.7s ease-in-out'
+                  }}></div>
+                  <style>{`
+                    @keyframes shine {
+                      to {
+                        transform: translateX(100%);
+                      }
+                    }
+                  `}</style>
+                  <p className="text-xl sm:text-2xl font-bold text-dark-text relative z-10">Dra. Luciana Lavigne</p>
+                  <p className="text-base sm:text-lg text-dark-text/70 leading-relaxed relative z-10">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
                 </div>
               </div>
 
