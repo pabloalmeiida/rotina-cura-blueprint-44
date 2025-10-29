@@ -67,9 +67,6 @@ const AuthorSection = () => {
                       variant="hero" 
                       size="xl" 
                       className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all"
-                      style={{
-                        background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
-                      }}
                     >
                       QUERO MEU LIVRO AGORA
                     </Button>
