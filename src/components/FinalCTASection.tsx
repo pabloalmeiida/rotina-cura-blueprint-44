@@ -57,10 +57,12 @@ const FinalCTASection = () => {
               size="xl" 
               className="w-full sm:w-auto text-base sm:text-xl lg:text-2xl py-5 sm:py-6 lg:py-8 px-6 sm:px-8 lg:px-12 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all mb-4"
             >
-              <span className="flex items-center justify-center gap-2 sm:gap-3 whitespace-normal sm:whitespace-nowrap text-center leading-tight">
-                <span className="block sm:inline">QUERO COMEÇAR MINHA</span>
-                <span className="block sm:inline">TRANSFORMAÇÃO</span>
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+              <span className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-center leading-tight">
+                <span className="whitespace-nowrap">QUERO COMEÇAR MINHA</span>
+                <span className="whitespace-nowrap flex items-center gap-2">
+                  TRANSFORMAÇÃO
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                </span>
               </span>
             </Button>
           </a>
