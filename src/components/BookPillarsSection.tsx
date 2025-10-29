@@ -82,8 +82,10 @@ const BookPillarsSection = () => {
               >
                 <div className="p-4 sm:p-6 lg:p-8">
                   <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
-                    <div className="flex-shrink-0 mx-auto sm:mx-0">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-hero rounded-xl flex items-center justify-center">
+                  <div className="flex-shrink-0 mx-auto sm:mx-0">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl flex items-center justify-center" style={{
+                        background: 'linear-gradient(90deg, rgba(216, 188, 128, 1) 0%, rgba(173, 143, 78, 1) 100%)'
+                      }}>
                         <pillar.icon className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 text-white" />
                       </div>
                     </div>
