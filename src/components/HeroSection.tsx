@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="relative z-20 bg-accent-gold text-white py-4">
         <div className="container mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 text-sm font-bold tracking-wide">
-            📚 Livro já disponível para venda!
+            Livro já disponível para venda!
           </div>
         </div>
       </div>
