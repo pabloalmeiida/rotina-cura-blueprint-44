@@ -116,11 +116,6 @@ const HeroSection = () => {
                   boxShadow: '0 8px 32px rgba(1, 181, 200, 0.18), 0 4px 16px rgba(0, 0, 0, 0.12)',
                   border: '1px solid rgba(1, 181, 200, 0.25)'
                 }}>
-                  {/* Top accent bar */}
-                  <div className="absolute top-0 left-0 right-0 h-1.5 rounded-t-3xl" style={{
-                    background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
-                  }}></div>
-                  
                   <p className="text-xl sm:text-2xl font-bold text-dark-text">Dra. Luciana Lavigne</p>
                   <p className="text-base sm:text-lg text-dark-text/70 leading-relaxed">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
                 </div>
