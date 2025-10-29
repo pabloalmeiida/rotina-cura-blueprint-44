@@ -84,9 +84,6 @@ const OfferSection = () => {
                     <Button 
                       size="xl" 
                       className="w-full text-base sm:text-lg py-6 sm:py-8 px-6 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all"
-                      style={{
-                        background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
-                      }}
                     >
                       <span className="flex items-center justify-center gap-2">
                         🚀 QUERO MEU LIVRO AGORA

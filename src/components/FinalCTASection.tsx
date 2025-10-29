@@ -56,9 +56,6 @@ const FinalCTASection = () => {
             <Button 
               size="xl" 
               className="w-full sm:w-auto text-xl sm:text-2xl py-6 sm:py-8 px-8 sm:px-12 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all mb-4"
-              style={{
-                background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
-              }}
             >
               <span className="flex items-center justify-center gap-3">
                 QUERO COMEÇAR MINHA TRANSFORMAÇÃO
