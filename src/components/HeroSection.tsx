@@ -111,11 +111,16 @@ const HeroSection = () => {
                   Um guia estratégico aplicado e validado em <span className="font-semibold text-primary-cyan">centenas de pacientes</span>, para ter mais energia, saúde e vitalidade.
                 </p>
                 
-                <div className="relative space-y-3 p-4 sm:p-6 rounded-2xl border backdrop-blur-md" style={{
-                  background: 'rgba(255, 255, 255, 0.7)',
-                  border: '1px solid rgba(1, 181, 200, 0.15)',
-                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5)'
+                <div className="relative space-y-3 p-4 sm:p-6 rounded-2xl backdrop-blur-xl" style={{
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.85) 100%)',
+                  border: '2px solid rgba(1, 181, 200, 0.3)',
+                  boxShadow: '0 12px 40px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(1, 181, 200, 0.2), inset 0 2px 2px rgba(255, 255, 255, 0.8)'
                 }}>
+                  {/* Decorative gradient accent */}
+                  <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={{
+                    background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
+                  }}></div>
+                  
                   <p className="text-lg sm:text-xl font-bold text-dark-text">Dra. Luciana Lavigne</p>
                   <p className="text-sm sm:text-base text-dark-text/70 leading-relaxed">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
                 </div>
