@@ -111,18 +111,18 @@ const HeroSection = () => {
                   Um guia estratégico aplicado e validado em <span className="font-semibold text-primary-cyan">centenas de pacientes</span>, para ter mais energia, saúde e vitalidade.
                 </p>
                 
-                <div className="relative space-y-3 p-5 sm:p-7 rounded-3xl" style={{
-                  background: 'rgba(255, 255, 255, 0.95)',
-                  boxShadow: '0 4px 24px rgba(1, 181, 200, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid rgba(1, 181, 200, 0.15)'
+                <div className="relative space-y-3 p-6 sm:p-8 rounded-3xl" style={{
+                  background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.98), rgba(249, 250, 251, 0.95))',
+                  boxShadow: '0 8px 32px rgba(1, 181, 200, 0.18), 0 4px 16px rgba(0, 0, 0, 0.12)',
+                  border: '1px solid rgba(1, 181, 200, 0.25)'
                 }}>
                   {/* Top accent bar */}
-                  <div className="absolute top-0 left-0 right-0 h-1 rounded-t-3xl" style={{
-                    background: 'hsl(var(--primary-cyan))'
+                  <div className="absolute top-0 left-0 right-0 h-1.5 rounded-t-3xl" style={{
+                    background: 'linear-gradient(90deg, hsl(var(--primary-cyan)), hsl(var(--primary-blue)))'
                   }}></div>
                   
-                  <p className="text-lg sm:text-xl font-bold text-dark-text">Dra. Luciana Lavigne</p>
-                  <p className="text-sm sm:text-base text-dark-text/70 leading-relaxed">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
+                  <p className="text-xl sm:text-2xl font-bold text-dark-text">Dra. Luciana Lavigne</p>
+                  <p className="text-base sm:text-lg text-dark-text/70 leading-relaxed">Médica especialista em Medicina Funcional Integrativa com mais de 10 anos de experiência</p>
                 </div>
               </div>
 
@@ -149,19 +149,31 @@ const HeroSection = () => {
 
             {/* Image */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative max-w-xs sm:max-w-md lg:max-w-lg mx-auto p-6 rounded-3xl" style={{
-                background: 'rgba(185, 235, 240, 0.25)',
-                boxShadow: '0 4px 24px rgba(1, 181, 200, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06)',
-                border: '1px solid rgba(1, 181, 200, 0.2)'
-              }}>
-                <img 
-                  src={heroImage} 
-                  alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura" 
-                  className="w-full h-auto rounded-2xl"
-                  style={{
-                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.1)'
-                  }}
-                />
+              <div className="relative max-w-xs sm:max-w-md lg:max-w-lg mx-auto">
+                {/* Elegant background shape */}
+                <div className="absolute inset-0 -z-10 transform translate-x-4 translate-y-4">
+                  <div className="w-full h-full rounded-3xl" style={{
+                    background: 'linear-gradient(135deg, rgba(1, 181, 200, 0.15) 0%, rgba(0, 92, 100, 0.1) 100%)',
+                    boxShadow: '0 20px 60px rgba(1, 181, 200, 0.15)'
+                  }}></div>
+                </div>
+                
+                {/* Decorative frame */}
+                <div className="absolute -inset-3 rounded-3xl" style={{
+                  border: '1px solid rgba(1, 181, 200, 0.2)',
+                  boxShadow: '0 0 40px rgba(1, 181, 200, 0.1)'
+                }}></div>
+                
+                <div className="relative">
+                  <img 
+                    src={heroImage} 
+                    alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura" 
+                    className="relative w-full h-auto rounded-3xl shadow-strong"
+                    style={{
+                      boxShadow: '0 25px 50px rgba(0, 0, 0, 0.12)'
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>
