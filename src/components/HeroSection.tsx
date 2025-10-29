@@ -21,7 +21,7 @@ const HeroSection = () => {
           <img 
             src={heroWavesBg} 
             alt="" 
-            className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-multiply"
+            className="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-multiply"
             style={{ objectPosition: 'center' }}
           />
         </div>
