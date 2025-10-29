@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/person-holding-book.png";
+import heroWavesBg from "@/assets/hero-waves-bg.png";
 const HeroSection = () => {
   return <section className="relative min-h-screen font-lato overflow-hidden">
       {/* Launch banner */}
@@ -15,6 +16,16 @@ const HeroSection = () => {
       <div className="relative min-h-[95vh] overflow-hidden" style={{
         background: 'linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 30%, #FAFAFA 60%, #F5F5F5 100%)'
       }}>
+        {/* Elegant wave background image */}
+        <div className="absolute inset-0 overflow-hidden">
+          <img 
+            src={heroWavesBg} 
+            alt="" 
+            className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-multiply"
+            style={{ objectPosition: 'center' }}
+          />
+        </div>
+        
         {/* Elegant decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Large organic shapes with gold tones */}
