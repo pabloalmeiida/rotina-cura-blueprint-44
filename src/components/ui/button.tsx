@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "text-white font-semibold border-0 bg-gradient-cta shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-button-hover before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100",
+        default: "text-white font-semibold border-0 relative overflow-hidden bg-gradient-cta shadow-elegant hover:shadow-glow hover:scale-[1.02] hover:brightness-110",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "text-white font-semibold border-0 bg-gradient-cta shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-button-hover before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100",
-        hero: "text-white font-bold border-0 bg-gradient-banner shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-button-hover before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100",
-        medical: "text-white border-0 bg-gradient-cta shadow-elegant hover:shadow-glow hover:scale-[1.02] transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-button-hover before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100",
+        cta: "text-white font-semibold border-0 relative overflow-hidden bg-gradient-cta shadow-elegant hover:shadow-glow hover:scale-[1.02] hover:brightness-110",
+        hero: "text-white font-bold border-0 relative overflow-hidden bg-gradient-banner shadow-elegant hover:shadow-glow hover:scale-[1.02] hover:brightness-110",
+        medical: "text-white border-0 relative overflow-hidden bg-gradient-cta shadow-elegant hover:shadow-glow hover:scale-[1.02] hover:brightness-110",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -41,17 +41,9 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, children, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button";
-    return (
-      <Comp 
-        className={cn(buttonVariants({ variant, size, className }))} 
-        ref={ref} 
-        {...props} 
-      >
-        <span className="relative z-10">{children}</span>
-      </Comp>
-    );
+    return <Comp className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />;
   },
 );
 Button.displayName = "Button";
