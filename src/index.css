@@ -25,26 +25,26 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 218 27% 20%;
+    --background: 0 0% 98%;
+    --foreground: 209 48% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 218 27% 20%;
+    --card-foreground: 209 48% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 218 27% 20%;
+    --popover-foreground: 209 48% 13%;
 
-    --primary: 210 100% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 43 54% 68%;
+    --primary-foreground: 209 48% 13%;
 
-    --secondary: 210 25% 95%;
-    --secondary-foreground: 218 27% 20%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 209 48% 13%;
 
-    --muted: 210 25% 95%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 209 48% 30%;
 
-    --accent: 142 76% 36%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 54% 68%;
+    --accent-foreground: 209 48% 13%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -53,32 +53,32 @@ All colors MUST be HSL.
     --input: 214 32% 91%;
     --ring: 210 100% 45%;
 
-    /* Identidade Visual - A Rotina que Cura - Nova Paleta */
-    --primary-blue: 194 100% 20%;
-    --primary-cyan: 188 99% 39%;
-    --primary-green: 185 100% 20%;
-    --brand-teal: 185 100% 20%;
-    --success-green: 188 99% 39%;
-    --dark-text: 194 100% 15%;
-    --light-bg: 45 15% 96%;
-    --soft-gray: 210 10% 92%;
-    --accent-gold: 45 85% 55%;
-    --cream: 45 25% 95%;
-    --sage-green: 150 25% 60%;
-    --purple-accent: 252 60% 72%;
-    --pink-accent: 324 47% 86%;
+    /* Nova Identidade Visual - Cores Personalizadas */
+    --primary-blue: 209 48% 13%;
+    --primary-cyan: 43 54% 68%;
+    --primary-green: 209 48% 13%;
+    --brand-teal: 209 48% 13%;
+    --success-green: 43 54% 68%;
+    --dark-text: 209 48% 13%;
+    --light-bg: 0 0% 98%;
+    --soft-gray: 0 0% 95%;
+    --accent-gold: 43 54% 68%;
+    --cream: 0 0% 98%;
+    --sage-green: 43 54% 78%;
+    --purple-accent: 43 54% 58%;
+    --pink-accent: 43 54% 88%;
     
-    /* Gradientes com as cores especificadas */
-    --gradient-hero: linear-gradient(135deg, hsl(194 100% 20%) 0%, hsl(188 99% 39%) 50%, hsl(194 100% 20%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(45 15% 96%), hsl(45 25% 95%));
-    --gradient-cta: linear-gradient(90deg, rgba(0, 92, 100, 1) 0%, rgba(1, 181, 200, 1) 70%);
-    --gradient-banner: linear-gradient(90deg, hsl(0 89% 38%) 0%, hsl(0 81% 46%) 100%);
-    --gradient-elegant: linear-gradient(135deg, hsl(45 25% 95%) 0%, hsl(210 10% 92%) 100%);
+    /* Gradientes com as novas cores */
+    --gradient-hero: linear-gradient(135deg, hsl(209 48% 13%) 0%, hsl(43 54% 68%) 50%, hsl(209 48% 13%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 95%));
+    --gradient-cta: linear-gradient(90deg, hsl(43 54% 58%) 0%, hsl(43 54% 78%) 100%);
+    --gradient-banner: linear-gradient(90deg, hsl(43 54% 58%) 0%, hsl(43 54% 68%) 100%);
+    --gradient-elegant: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 95%) 100%);
     
     /* Sombras personalizadas */
-    --shadow-soft: 0 4px 20px -2px hsl(194 100% 20% / 0.1);
-    --shadow-strong: 0 10px 40px -4px hsl(194 100% 20% / 0.2);
-    --shadow-custom: 0 10px 150px 1px rgba(135,113,255,.1), 0 -10px 150px 0 rgba(245,194,251,.2);
+    --shadow-soft: 0 4px 20px -2px hsl(209 48% 13% / 0.1);
+    --shadow-strong: 0 10px 40px -4px hsl(209 48% 13% / 0.2);
+    --shadow-custom: 0 10px 40px 0 hsl(43 54% 68% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
