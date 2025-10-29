@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/person-holding-book.png";
-import heroWavesBg from "@/assets/hero-waves-bg.png";
+import heroWavesBg from "@/assets/hero-waves-bg.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen font-lato overflow-hidden">
       {/* Launch banner */}
@@ -21,7 +21,7 @@ const HeroSection = () => {
           <img 
             src={heroWavesBg} 
             alt="" 
-            className="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-multiply"
+            className="absolute inset-0 w-full h-full object-cover opacity-20"
             style={{ objectPosition: 'center' }}
           />
         </div>
