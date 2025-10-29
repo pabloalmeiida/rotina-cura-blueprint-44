@@ -13,57 +13,82 @@ const HeroSection = () => {
 
       {/* Main hero content */}
       <div className="relative min-h-[95vh] overflow-hidden" style={{
-        background: 'linear-gradient(135deg, #F5F1E8 0%, #E8DFD0 50%, #F5F1E8 100%)'
+        background: 'linear-gradient(135deg, #F5F1E8 0%, #E8E9F0 30%, #EFF5F7 60%, #F5F1E8 100%)'
       }}>
         {/* Elegant decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Soft organic shapes */}
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-30">
-            <svg viewBox="0 0 600 600" className="w-full h-full">
-              <path 
-                d="M 0,150 Q 150,0 300,50 T 600,100 L 600,0 L 0,0 Z" 
-                fill="url(#gradient1)" 
-                opacity="0.3"
-              />
+          {/* Large organic shapes with cyan/blue tones */}
+          <div className="absolute -top-40 -right-40 w-[800px] h-[800px] opacity-[0.08]">
+            <svg viewBox="0 0 800 800" className="w-full h-full">
+              <ellipse cx="400" cy="400" rx="350" ry="400" fill="url(#cyanGradient)" transform="rotate(-25 400 400)" />
               <defs>
-                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: '#D4C5B0', stopOpacity: 0.4 }} />
-                  <stop offset="100%" style={{ stopColor: '#C9B99A', stopOpacity: 0.2 }} />
-                </linearGradient>
+                <radialGradient id="cyanGradient">
+                  <stop offset="0%" style={{ stopColor: 'hsl(188, 99%, 39%)', stopOpacity: 0.6 }} />
+                  <stop offset="100%" style={{ stopColor: 'hsl(194, 100%, 20%)', stopOpacity: 0.3 }} />
+                </radialGradient>
               </defs>
             </svg>
           </div>
 
-          <div className="absolute bottom-0 left-0 w-[700px] h-[700px] opacity-25">
+          <div className="absolute -bottom-32 -left-32 w-[700px] h-[700px] opacity-[0.06]">
             <svg viewBox="0 0 700 700" className="w-full h-full">
-              <path 
-                d="M 0,600 Q 200,550 350,600 T 700,550 L 700,700 L 0,700 Z" 
-                fill="url(#gradient2)" 
-                opacity="0.4"
-              />
+              <ellipse cx="350" cy="350" rx="320" ry="360" fill="url(#blueGradient)" transform="rotate(15 350 350)" />
               <defs>
-                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style={{ stopColor: '#E8DFD0', stopOpacity: 0.3 }} />
-                  <stop offset="100%" style={{ stopColor: '#D4C5B0', stopOpacity: 0.2 }} />
-                </linearGradient>
+                <radialGradient id="blueGradient">
+                  <stop offset="0%" style={{ stopColor: 'hsl(194, 100%, 20%)', stopOpacity: 0.5 }} />
+                  <stop offset="100%" style={{ stopColor: 'hsl(188, 99%, 39%)', stopOpacity: 0.2 }} />
+                </radialGradient>
               </defs>
             </svg>
           </div>
 
-          {/* Subtle accent circles */}
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full" style={{
-            background: 'radial-gradient(circle, rgba(212, 197, 176, 0.15) 0%, transparent 70%)'
+          {/* Flowing curved lines */}
+          <div className="absolute top-1/4 left-0 w-full h-px opacity-[0.08]">
+            <svg viewBox="0 0 1400 200" className="w-full" preserveAspectRatio="none">
+              <path d="M0,100 Q350,50 700,100 T1400,100" fill="none" stroke="hsl(188, 99%, 39%)" strokeWidth="2" />
+            </svg>
+          </div>
+
+          <div className="absolute bottom-1/3 left-0 w-full h-px opacity-[0.06]">
+            <svg viewBox="0 0 1400 200" className="w-full" preserveAspectRatio="none">
+              <path d="M0,100 Q350,150 700,100 T1400,100" fill="none" stroke="hsl(194, 100%, 20%)" strokeWidth="2" />
+            </svg>
+          </div>
+
+          {/* Subtle floating circles */}
+          <div className="absolute top-20 left-1/4 w-40 h-40 rounded-full opacity-[0.05]" style={{
+            background: 'radial-gradient(circle, hsl(188, 99%, 39%) 0%, transparent 70%)'
           }}></div>
-          <div className="absolute bottom-1/3 right-1/4 w-48 h-48 rounded-full" style={{
-            background: 'radial-gradient(circle, rgba(201, 185, 154, 0.12) 0%, transparent 70%)'
+          <div className="absolute bottom-40 right-1/4 w-56 h-56 rounded-full opacity-[0.04]" style={{
+            background: 'radial-gradient(circle, hsl(194, 100%, 20%) 0%, transparent 70%)'
           }}></div>
-          <div className="absolute top-1/2 right-1/3 w-24 h-24 rounded-full" style={{
-            background: 'radial-gradient(circle, rgba(232, 223, 208, 0.2) 0%, transparent 70%)'
+          <div className="absolute top-1/2 left-1/3 w-32 h-32 rounded-full opacity-[0.06]" style={{
+            background: 'radial-gradient(circle, hsl(188, 99%, 39%) 0%, transparent 70%)'
+          }}></div>
+          <div className="absolute bottom-1/4 left-1/2 w-44 h-44 rounded-full opacity-[0.05]" style={{
+            background: 'radial-gradient(circle, hsl(194, 100%, 20%) 0%, transparent 70%)'
           }}></div>
 
-          {/* Elegant line accents */}
-          <div className="absolute top-20 right-20 w-64 h-px bg-gradient-to-r from-transparent via-accent-gold/20 to-transparent"></div>
-          <div className="absolute bottom-32 left-32 w-48 h-px bg-gradient-to-r from-transparent via-accent-gold/15 to-transparent"></div>
+          {/* Geometric accent shapes */}
+          <div className="absolute top-32 right-1/3 w-24 h-24 opacity-[0.04]">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <polygon points="50,10 90,90 10,90" fill="hsl(188, 99%, 39%)" />
+            </svg>
+          </div>
+          
+          <div className="absolute bottom-48 left-1/4 w-20 h-20 opacity-[0.05]">
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <rect x="20" y="20" width="60" height="60" fill="hsl(194, 100%, 20%)" transform="rotate(45 50 50)" />
+            </svg>
+          </div>
+
+          {/* Soft gradient overlays for depth */}
+          <div className="absolute top-0 left-0 w-full h-1/3 opacity-[0.03]" style={{
+            background: 'linear-gradient(180deg, hsl(188, 99%, 39%) 0%, transparent 100%)'
+          }}></div>
+          <div className="absolute bottom-0 left-0 w-full h-1/3 opacity-[0.03]" style={{
+            background: 'linear-gradient(0deg, hsl(194, 100%, 20%) 0%, transparent 100%)'
+          }}></div>
         </div>
 
         <div className="relative z-10 container mx-auto px-4 py-12 lg:py-20">
@@ -119,15 +144,15 @@ const HeroSection = () => {
                 {/* Elegant background shape */}
                 <div className="absolute inset-0 -z-10 transform translate-x-4 translate-y-4">
                   <div className="w-full h-full rounded-3xl" style={{
-                    background: 'linear-gradient(135deg, rgba(212, 197, 176, 0.3) 0%, rgba(201, 185, 154, 0.2) 100%)',
-                    boxShadow: '0 20px 60px rgba(0, 0, 0, 0.08)'
+                    background: 'linear-gradient(135deg, rgba(1, 181, 200, 0.15) 0%, rgba(0, 92, 100, 0.1) 100%)',
+                    boxShadow: '0 20px 60px rgba(1, 181, 200, 0.15)'
                   }}></div>
                 </div>
                 
                 {/* Decorative frame */}
                 <div className="absolute -inset-3 rounded-3xl" style={{
-                  border: '1px solid rgba(212, 197, 176, 0.3)',
-                  boxShadow: '0 0 40px rgba(212, 197, 176, 0.15)'
+                  border: '1px solid rgba(1, 181, 200, 0.2)',
+                  boxShadow: '0 0 40px rgba(1, 181, 200, 0.1)'
                 }}></div>
                 
                 <div className="relative">
@@ -142,9 +167,9 @@ const HeroSection = () => {
                   
                   {/* Elegant badge */}
                   <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-strong backdrop-blur-sm" style={{
-                    background: 'linear-gradient(135deg, hsl(var(--accent-gold)) 0%, #D4A574 100%)',
+                    background: 'linear-gradient(135deg, hsl(var(--primary-cyan)) 0%, hsl(var(--primary-blue)) 100%)',
                     color: '#FFFFFF',
-                    boxShadow: '0 8px 24px rgba(212, 165, 116, 0.4)'
+                    boxShadow: '0 8px 24px rgba(1, 181, 200, 0.4)'
                   }}>
                     ✨ Exclusivo
                   </div>
