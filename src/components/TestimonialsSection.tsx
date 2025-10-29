@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white font-lato">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 lg:mb-16">

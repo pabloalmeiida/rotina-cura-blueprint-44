@@ -3,7 +3,7 @@ import { ArrowRight, Package, Sparkles } from "lucide-react";
 
 const FinalCTASection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-elegant font-lato">
+    <section className="py-16 lg:py-24 bg-gradient-elegant">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">

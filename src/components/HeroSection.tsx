@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/person-holding-book.png";
 import heroWavesBg from "@/assets/hero-waves-bg.jpg";
 const HeroSection = () => {
-  return <section className="relative min-h-screen font-lato overflow-hidden">
+  return <section className="relative min-h-screen overflow-hidden">
       {/* Launch banner */}
       <div className="relative z-20 bg-accent-gold text-white py-4">
         <div className="container mx-auto px-4 text-center">

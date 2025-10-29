@@ -86,7 +86,7 @@ export default {
         "gradient-elegant": "var(--gradient-elegant)",
       },
       fontFamily: {
-        'lato': ['Lato', 'sans-serif'],
+        'sora': ['Sora', 'sans-serif'],
         'trajan': ['Trajan Pro', 'serif'],
       },
       boxShadow: {

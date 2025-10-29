@@ -2,7 +2,7 @@ import { Star, TrendingUp } from "lucide-react";
 
 const AmazonTopSection = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section font-lato">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8 lg:mb-12">

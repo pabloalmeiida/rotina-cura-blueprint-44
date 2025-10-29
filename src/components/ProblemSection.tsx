@@ -11,7 +11,7 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section font-lato">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8 lg:space-y-12">
           <div className="space-y-4 lg:space-y-6">

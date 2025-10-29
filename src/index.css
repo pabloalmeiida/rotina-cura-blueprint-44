@@ -148,7 +148,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-lato;
+    @apply bg-background text-foreground font-sora;
     overflow-x: hidden;
   }
 
