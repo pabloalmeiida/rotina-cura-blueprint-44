@@ -52,14 +52,15 @@ const FinalCTASection = () => {
             </div>
           </div>
 
-          <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer" className="block">
             <Button 
               size="xl" 
-              className="w-full sm:w-auto text-xl sm:text-2xl py-6 sm:py-8 px-8 sm:px-12 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all mb-4"
+              className="w-full sm:w-auto text-base sm:text-xl lg:text-2xl py-5 sm:py-6 lg:py-8 px-6 sm:px-8 lg:px-12 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all mb-4"
             >
-              <span className="flex items-center justify-center gap-3">
-                QUERO COMEÇAR MINHA TRANSFORMAÇÃO
-                <ArrowRight className="w-6 h-6" />
+              <span className="flex items-center justify-center gap-2 sm:gap-3 whitespace-normal sm:whitespace-nowrap text-center leading-tight">
+                <span className="block sm:inline">QUERO COMEÇAR MINHA</span>
+                <span className="block sm:inline">TRANSFORMAÇÃO</span>
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
               </span>
             </Button>
           </a>
