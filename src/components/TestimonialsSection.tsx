@@ -75,7 +75,7 @@ const TestimonialsSection = () => {
             </div>
 
             <div className="bg-primary-cyan/10 p-4 sm:p-6 rounded-xl inline-block mb-6">
-              <p className="text-dark-text font-semibold text-sm sm:text-base lg:text-lg px-2">
+              <p className="text-dark-text font-semibold text-sm sm:text-base lg:text-lg px-2 text-center">
                 ✨ Estes são apenas alguns dos <span className="text-primary-cyan">resultados reais</span> que 
                 os princípios do livro proporcionaram aos pacientes da Dra. Luciana
               </p>
