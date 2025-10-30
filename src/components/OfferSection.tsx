@@ -49,7 +49,7 @@ const OfferSection = () => {
                       <Check className="w-4 h-4 text-primary-cyan" />
                     </div>
                     <span className="text-dark-text/80 text-base sm:text-lg">
-                      <span className="font-semibold text-accent-gold">Frete grátis</span> para todo o Brasil
+                      <span className="font-semibold text-accent-gold">Método validado</span> em centenas de pacientes
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
