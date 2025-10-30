@@ -34,10 +34,6 @@ const FinalCTASection = () => {
               <ul className="space-y-3 text-left max-w-md mx-auto">
                 <li className="flex items-start gap-3">
                   <span className="text-accent-gold text-xl">✓</span>
-                  <span className="text-dark-text/80">Frete grátis para todo o Brasil</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent-gold text-xl">✓</span>
                   <span className="text-dark-text/80">Pronta-entrega com estoques limitados</span>
                 </li>
                 <li className="flex items-start gap-3">
