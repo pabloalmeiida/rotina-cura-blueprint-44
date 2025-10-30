@@ -137,10 +137,6 @@ const HeroSection = () => {
                   <p className="text-base sm:text-lg leading-relaxed text-dark-text/80 max-w-md font-semibold">
                     Experimente agora o método que está transformando vidas!
                   </p>
-                  <div className="flex items-center gap-3 text-sm text-accent-gold font-semibold">
-                    <div className="w-2 h-2 bg-accent-gold rounded-full"></div>
-                    <span>Seu exemplar com frete grátis para todo o Brasil!</span>
-                  </div>
                 </div>
                 
                 <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer">
