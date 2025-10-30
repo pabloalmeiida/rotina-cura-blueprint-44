@@ -69,6 +69,8 @@ const BookPillarsSection = () => {
             <img 
               src={mockupImage} 
               alt="Livro A Rotina que Cura em diferentes formatos - físico, tablet e celular"
+              width="1920"
+              height="1090"
               className="max-w-xs sm:max-w-sm lg:max-w-lg w-full h-auto"
             />
           </div>

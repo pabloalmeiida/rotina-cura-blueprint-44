@@ -29,7 +29,13 @@ const OfferSection = () => {
                 </div>
                 <div className="bg-white p-6 sm:p-8 rounded-b-2xl">
                   <div className="relative z-10 max-w-xs mx-auto mb-6">
-                    <img src={mockupImage} alt="Livro A Rotina que Cura - Disponível Agora" className="w-full" />
+                    <img 
+                      src={mockupImage} 
+                      alt="Livro A Rotina que Cura - Disponível Agora" 
+                      width="1920"
+                      height="1090"
+                      className="w-full" 
+                    />
                   </div>
                 </div>
               </div>

@@ -22,6 +22,8 @@ const AuthorSection = () => {
                 <img 
                   src={authorImage} 
                   alt="Dra. Luciana Lavigne - Médica especialista em Medicina Funcional Integrativa"
+                  width="1279"
+                  height="1920"
                   className="w-full max-w-sm sm:max-w-md mx-auto rounded-2xl shadow-strong"
                 />
               </div>

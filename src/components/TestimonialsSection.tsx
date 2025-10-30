@@ -45,6 +45,8 @@ const TestimonialsSection = () => {
                         <img 
                           src={image} 
                           alt={`Depoimento de paciente ${index + 1}`}
+                          width="1080"
+                          height="1920"
                           className="w-full h-auto rounded-lg shadow-soft"
                         />
                       </div>
@@ -69,6 +71,8 @@ const TestimonialsSection = () => {
                 <img 
                   src={launchEvent} 
                   alt="Evento de lançamento do livro A Rotina Que Cura com leitores"
+                  width="2048"
+                  height="1365"
                   className="w-full h-auto rounded-xl shadow-strong"
                 />
               </div>

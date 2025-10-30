@@ -168,6 +168,8 @@ const HeroSection = () => {
                   <img 
                     src={heroImage} 
                     alt="Dra. Luciana Lavigne segurando o livro A Rotina que Cura" 
+                    width="832"
+                    height="1248"
                     className="relative w-full h-auto rounded-3xl shadow-strong"
                     style={{
                       boxShadow: '0 25px 50px rgba(0, 0, 0, 0.12)'
