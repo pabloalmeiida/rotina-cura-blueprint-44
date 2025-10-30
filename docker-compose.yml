@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  rotina-cura-page:
+    build: .
+    container_name: rotina-cura
+    ports:
+      - "8080:80"
+    restart: unless-stopped
