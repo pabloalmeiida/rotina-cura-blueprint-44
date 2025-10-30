@@ -109,7 +109,7 @@ const OfferSection = () => {
                 </h3>
               </div>
               <p className="text-base sm:text-lg text-dark-text/70 mb-6">
-                Esta é uma <span className="font-bold">oferta especial</span> para quem adquirir nesta página. Todas essas <span className="text-accent-gold font-semibold">condições únicas</span> que não se repetirão.
+                Esta é uma <span className="font-bold">oferta especial</span> para quem adquirir nesta página. Todas essas <span className="text-accent-gold font-semibold">condições únicas</span> não se repetirão.
               </p>
               <div className="flex items-center justify-center gap-2 text-accent-gold font-semibold">
                 <Sparkles className="w-5 h-5" />
