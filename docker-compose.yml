@@ -1,9 +1,15 @@
 version: '3.8'
 
 services:
-  rotina-cura-page:
-    build: .
-    container_name: rotina-cura
-    ports:
-      - "8080:80"
-    restart: unless-stopped
+  rotina-cura:
+    image: pabloalmeiida/rotina-cura:latest
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.rotina-cura.rule=Host(`seudominio.com.br`)
+      - traefik.http.routers.rotina-cura.entrypoints=websecure
+      - traefik.http.routers.rotina-cura.tls.certresolver=le
+      - traefik.http.routers.rotina-cura.tls=true
+      - traefik.http.services.rotina-cura.loadbalancer.server.port=80
+    deploy:
+      restart_policy:
+        condition: any
