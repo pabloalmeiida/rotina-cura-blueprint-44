@@ -1,6 +1,6 @@
 import { Utensils, Clock, Moon, Pill, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import mockupImage from "@/assets/mockup.png";
+import mockupImage from "@/assets/mockup.webp";
 
 const BookPillarsSection = () => {
   const pillars = [

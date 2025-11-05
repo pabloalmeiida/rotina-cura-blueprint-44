@@ -1,9 +1,9 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import news1 from "@/assets/news-1.png";
-import news2 from "@/assets/news-2.png";
-import news3 from "@/assets/news-3.png";
+import news1 from "@/assets/news-1.webp";
+import news2 from "@/assets/news-2.webp";
+import news3 from "@/assets/news-3.webp";
 
 const MediaSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

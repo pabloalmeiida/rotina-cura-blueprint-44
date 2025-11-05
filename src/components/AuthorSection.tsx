@@ -1,4 +1,4 @@
-import authorImage from "@/assets/person.png";
+import authorImage from "@/assets/person.webp";
 import { Button } from "@/components/ui/button";
 
 const AuthorSection = () => {

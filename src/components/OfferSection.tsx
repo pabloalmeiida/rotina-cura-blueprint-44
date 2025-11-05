@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Clock, Check, Sparkles } from "lucide-react";
-import mockupImage from "@/assets/mockup.png";
+import mockupImage from "@/assets/mockup.webp";
 const OfferSection = () => {
   return <section className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4">

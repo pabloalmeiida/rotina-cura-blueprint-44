@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/person-holding-book.png";
-import heroWavesBg from "@/assets/hero-waves-bg.jpg";
+import heroImage from "@/assets/person-holding-book.webp";
+import heroWavesBg from "@/assets/hero-waves-bg.webp";
 const HeroSection = () => {
   return <section className="relative min-h-screen overflow-hidden">
       {/* Launch banner */}

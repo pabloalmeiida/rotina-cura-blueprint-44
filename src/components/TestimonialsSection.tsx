@@ -1,12 +1,12 @@
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import testimonial1 from "@/assets/testimonials/testimonial-new-1.jpg";
-import testimonial2 from "@/assets/testimonials/testimonial-new-2.jpg";
-import testimonial3 from "@/assets/testimonials/testimonial-new-3.jpg";
-import testimonial4 from "@/assets/testimonials/testimonial-new-4.jpg";
-import testimonial5 from "@/assets/testimonials/testimonial-new-5.jpg";
-import launchEvent from "@/assets/book-launch-event.jpg";
+import testimonial1 from "@/assets/testimonials/testimonial-new-1.webp";
+import testimonial2 from "@/assets/testimonials/testimonial-new-2.webp";
+import testimonial3 from "@/assets/testimonials/testimonial-new-3.webp";
+import testimonial4 from "@/assets/testimonials/testimonial-new-4.webp";
+import testimonial5 from "@/assets/testimonials/testimonial-new-5.webp";
+import launchEvent from "@/assets/book-launch-event.webp";
 
 const TestimonialsSection = () => {
   const testimonialImages = [
