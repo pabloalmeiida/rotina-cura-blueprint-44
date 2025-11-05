@@ -1,31 +1,21 @@
 import authorImage from "@/assets/person.webp";
 import { Button } from "@/components/ui/button";
-
 const AuthorSection = () => {
-  return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+  return <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-dark-text mb-4 sm:mb-6 px-2">
               Minha Jornada da Dor à Descoberta:
             </h2>
-            <p className="text-lg sm:text-xl lg:text-2xl text-success-green font-semibold px-2">
-              Como me Curei e Encontrei A Rotina Que Cura
-            </p>
+            <p className="text-lg sm:text-xl lg:text-2xl text-success-green font-semibold px-2">Como me Curei e Encontrei A Rotina Que Cura</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Author Image */}
             <div className="relative order-2 lg:order-1">
               <div className="relative z-10">
-                <img 
-                  src={authorImage} 
-                  alt="Dra. Luciana Lavigne - Médica especialista em Medicina Funcional Integrativa"
-                  width="1279"
-                  height="1920"
-                  className="w-full max-w-sm sm:max-w-md mx-auto rounded-2xl shadow-strong"
-                />
+                <img src={authorImage} alt="Dra. Luciana Lavigne - Médica especialista em Medicina Funcional Integrativa" width="1279" height="1920" className="w-full max-w-sm sm:max-w-md mx-auto rounded-2xl shadow-strong" />
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-3 -right-3 sm:-top-6 sm:-right-6 w-16 h-16 sm:w-24 sm:h-24 bg-success-green/10 rounded-full"></div>
@@ -65,11 +55,7 @@ const AuthorSection = () => {
 
                 <div className="text-left mt-6 sm:mt-8">
                   <a href="https://www.amazon.com.br/rotina-que-cura-pr%C3%A1tico-vitalidade/dp/6501663040/ref=tmm_pap_swatch_0" target="_blank" rel="noopener noreferrer">
-                    <Button 
-                      variant="hero" 
-                      size="xl" 
-                      className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all"
-                    >
+                    <Button variant="hero" size="xl" className="w-full sm:w-auto text-base sm:text-lg py-4 sm:py-6 px-6 sm:px-10 font-bold text-white rounded-xl shadow-strong hover:shadow-custom transition-all">
                       QUERO MEU LIVRO AGORA
                     </Button>
                   </a>
@@ -79,8 +65,6 @@ const AuthorSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AuthorSection;
